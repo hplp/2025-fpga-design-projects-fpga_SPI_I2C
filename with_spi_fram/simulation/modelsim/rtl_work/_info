@@ -1,0 +1,803 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/serv_project/build/servant_1.3.0/de0_nano-quartus/simulation/modelsim
+vserial_out
+Z1 !s110 1745099622
+!i10b 1
+!s100 nB@8zYTe>Z[UQYkD[9`dG3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ITQ8_b^kj:>Iam[Z_i]lIc0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1732260854
+8D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v
+FD:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v
+!i122 2
+L0 5 96
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1745099622.000000
+!s107 D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/serial_out/synthesis|D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v|
+!i113 1
+Z6 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/serial_out/synthesis
+Z7 tCvgOpt 0
+vserial_out_jtag_uart_0
+R1
+!i10b 1
+!s100 jfJoRAJ7U2]5c^]87Ee=B0
+R2
+I:6A8KQ9865W]<mM5UMDV:3
+R3
+R0
+Z8 w1732003987
+Z9 8D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v
+Z10 FD:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v
+!i122 1
+L0 331 257
+R4
+r1
+!s85 0
+31
+R5
+Z11 !s107 D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v|
+Z12 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules|D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v|
+!i113 1
+R6
+Z13 !s92 -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules
+R7
+vserial_out_jtag_uart_0_scfifo_r
+R1
+!i10b 1
+!s100 Z64A_P6m8KAI[C7iiNGEa2
+R2
+IKeQAXHBU_Li5o<?c`mA420
+R3
+R0
+R8
+R9
+R10
+!i122 1
+L0 243 78
+R4
+r1
+!s85 0
+31
+R5
+R11
+R12
+!i113 1
+R6
+R13
+R7
+vserial_out_jtag_uart_0_scfifo_w
+R1
+!i10b 1
+!s100 gCCc[=dfEH7I:jTd66I^b1
+R2
+IY3fA8EH2WH[UfBN:YV0ZE2
+R3
+R0
+R8
+R9
+R10
+!i122 1
+L0 78 76
+R4
+r1
+!s85 0
+31
+R5
+R11
+R12
+!i113 1
+R6
+R13
+R7
+vserial_out_jtag_uart_0_sim_scfifo_r
+R1
+!i10b 1
+!s100 LU]6BQA;mK_=S;l45k<iK0
+R2
+I`Oc>0mA3knbX1^fN3lX;h0
+R3
+R0
+R8
+R9
+R10
+!i122 1
+L0 164 69
+R4
+r1
+!s85 0
+31
+R5
+R11
+R12
+!i113 1
+R6
+R13
+R7
+vserial_out_jtag_uart_0_sim_scfifo_w
+R1
+!i10b 1
+!s100 _eYmgEMAfOUgdi=dM6@o50
+R2
+IA[dHbFPG2G4l1@bmm?87g3
+R3
+R0
+R8
+R9
+R10
+!i122 1
+L0 21 47
+R4
+r1
+!s85 0
+31
+R5
+R11
+R12
+!i113 1
+R6
+R13
+R7
+vserv_alu
+Z14 !s110 1745099623
+!i10b 1
+!s100 JUOV<FNK5U4mK2c@l:YXm1
+R2
+IeBMo[7Sgg=AnV0KiJTJFe3
+R3
+R0
+Z15 w1731397733
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_alu.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_alu.v
+!i122 9
+L0 2 80
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_alu.v|
+!i113 1
+R6
+Z16 !s92 -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl
+R7
+vserv_bufreg
+R1
+!i10b 1
+!s100 2;;K>T^Mi3`88WzcZXakE0
+R2
+ISnZln4=Mb:@1a4SbTQ`E=2
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_bufreg.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_bufreg.v
+!i122 7
+Z17 L0 1 65
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_bufreg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_bufreg.v|
+!i113 1
+R6
+R16
+R7
+vserv_bufreg2
+R1
+!i10b 1
+!s100 FJmk^Q?5>]fHdgFYdnXBD0
+R2
+ID2dPAzHOifDnJfB<Qdi7o2
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_bufreg2.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_bufreg2.v
+!i122 8
+R17
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_bufreg2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_bufreg2.v|
+!i113 1
+R6
+R16
+R7
+vserv_csr
+R14
+!i10b 1
+!s100 lIAI9Zb<[_P5O<Xl3SegD0
+R2
+Ia4@5554A8QQhlGYiU3?_A1
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_csr.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_csr.v
+!i122 10
+L0 2 157
+R4
+r1
+!s85 0
+31
+Z18 !s108 1745099623.000000
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_csr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_csr.v|
+!i113 1
+R6
+R16
+R7
+vserv_ctrl
+R14
+!i10b 1
+!s100 PUXzZo_^:jXd3BSGcAGQ60
+R2
+IIaT4l2VMXe32H4[g6IkzJ2
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_ctrl.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_ctrl.v
+!i122 11
+L0 2 108
+R4
+r1
+!s85 0
+31
+R18
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_ctrl.v|
+!i113 1
+R6
+R16
+R7
+vserv_decode
+R14
+!i10b 1
+!s100 E4=7V^d[88eh_BOba`L^`3
+R2
+IM8YTGWR3T8Gm4BcM5RMkV2
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_decode.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_decode.v
+!i122 12
+L0 2 364
+R4
+r1
+!s85 0
+31
+R18
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_decode.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_decode.v|
+!i113 1
+R6
+R16
+R7
+vserv_immdec
+R14
+!i10b 1
+!s100 P8W8bdJoB7d`2`bk68UfF0
+R2
+IkfQ9U=k>H@Y?VkBDPZQjX3
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_immdec.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_immdec.v
+!i122 13
+L0 2 94
+R4
+r1
+!s85 0
+31
+R18
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_immdec.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_immdec.v|
+!i113 1
+R6
+R16
+R7
+vserv_mem_if
+R14
+!i10b 1
+!s100 OW>a`e:ifBgWbYHXEk<OW2
+R2
+IB9zJFo:C?i]B`lZ0H^TZX3
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_mem_if.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_mem_if.v
+!i122 14
+L0 2 68
+R4
+r1
+!s85 0
+31
+R18
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_mem_if.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_mem_if.v|
+!i113 1
+R6
+R16
+R7
+vserv_rf_if
+R14
+!i10b 1
+!s100 C69bF[C9k[_VDkHe^58C]3
+R2
+I[akb0gIld7bgICOEag4nA1
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_rf_if.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_rf_if.v
+!i122 15
+L0 2 152
+R4
+r1
+!s85 0
+31
+R18
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_rf_if.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_rf_if.v|
+!i113 1
+R6
+R16
+R7
+vserv_rf_ram
+Z19 !s110 1745099624
+!i10b 1
+!s100 2AoUWNaTc4C>nHl^V<o_k0
+R2
+I9VnYKO14YJ;OM^z``DPk:2
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_rf_ram.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_rf_ram.v
+!i122 17
+L0 1 45
+R4
+r1
+!s85 0
+31
+R18
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_rf_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_rf_ram.v|
+!i113 1
+R6
+R16
+R7
+vserv_rf_ram_if
+R14
+!i10b 1
+!s100 HY_`aQ@2Pl]]jMPZVU7Og0
+R2
+IiiUL2MYlB@1d2`SIk<4g51
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_rf_ram_if.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_rf_ram_if.v
+!i122 16
+L0 2 179
+R4
+r1
+!s85 0
+31
+R18
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_rf_ram_if.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_rf_ram_if.v|
+!i113 1
+R6
+R16
+R7
+vserv_state
+R19
+!i10b 1
+!s100 gS>MSN9[8BO8G;oDP[DHC2
+R2
+IX^6YO20YDjfKnmP^4Tg>53
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_state.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_state.v
+!i122 18
+L0 1 231
+R4
+r1
+!s85 0
+31
+Z20 !s108 1745099624.000000
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_state.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_state.v|
+!i113 1
+R6
+R16
+R7
+vserv_top
+R19
+!i10b 1
+!s100 of7@9N0o4dSkD12XgL<ko1
+R2
+Il;go@SX=^LfSRN>fEz^L@2
+R3
+R0
+Z21 w1733995528
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_top.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_top.v
+!i122 19
+L0 3 690
+R4
+r1
+!s85 0
+31
+R20
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/serv_1.3.0/rtl/serv_top.v|
+!i113 1
+R6
+R16
+R7
+vservant_gpio
+R19
+!i10b 1
+!s100 O^=CV0PLl@A2=[<1WmQTz1
+R2
+I^1a2]h2`DRXGWN^:9Z@5_1
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servant_gpio.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servant_gpio.v
+!i122 24
+L0 1 14
+R4
+r1
+!s85 0
+31
+R20
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servant_gpio.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servant_gpio.v|
+!i113 1
+R6
+Z22 !s92 -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant
+R7
+vservant_mux
+Z23 !s110 1745099625
+!i10b 1
+!s100 :A45`_63NRKPZKkL5aW@d2
+R2
+IhP]@13ehSj`dK1H][R8XY1
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servant_mux.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servant_mux.v
+!i122 25
+L0 7 45
+R4
+r1
+!s85 0
+31
+R20
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servant_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servant_mux.v|
+!i113 1
+R6
+R22
+R7
+vservant_spi_master_if
+R1
+!i10b 1
+!s100 R75QP0kP5oY7H=o;P5O1j3
+R2
+IlaB:@YmeGFXHPX2oGVljW1
+R3
+R0
+w1743315899
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_master_if.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_master_if.v
+!i122 6
+L0 2 258
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_master_if.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_master_if.v|
+!i113 1
+R6
+Z24 !s92 -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi
+R7
+vservant_spi_ram
+R1
+!i10b 1
+!s100 Z_TY=z`WBof0[8Z1O1iO53
+R2
+IE;YlfNYES=QgDRg`XGb>^1
+R3
+R0
+R21
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_ram.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_ram.v
+!i122 5
+L0 2 57
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_ram.v|
+!i113 1
+R6
+R24
+R7
+vservant_spi_slave_if
+R1
+!i10b 1
+!s100 ]9JJdSLH:L9VmSGO_Lah[2
+R2
+IGSj`JkiCm?h853nGCnQe42
+R3
+R0
+R21
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_slave_if.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_slave_if.v
+!i122 4
+L0 2 180
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_slave_if.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_slave_if.v|
+!i113 1
+R6
+R24
+R7
+vservant_spi_top
+R1
+!i10b 1
+!s100 _:H[C>HCGVTZgaO@SHdiF2
+R2
+I^57ol4XBaD0:QjTL:d^5o3
+R3
+R0
+w1745083586
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_top.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_top.v
+!i122 3
+L0 2 218
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant_spi/servant_spi_top.v|
+!i113 1
+R6
+R24
+R7
+vservant_tb
+R23
+!i10b 1
+!s100 KdHh?J4_dnh`Fk[a;2FPc0
+R2
+I6UTT_OFz^XRFbIQ54m2zm3
+R3
+R0
+w1745092107
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/bench/servant_tb.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/bench/servant_tb.v
+!i122 28
+L0 2 32
+R4
+r1
+!s85 0
+31
+Z25 !s108 1745099625.000000
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/bench/servant_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/bench|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/bench/servant_tb.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/bench
+R7
+vservant_timer
+R19
+!i10b 1
+!s100 No`=V07cKFzVjJ:a^2Qh?1
+R2
+IUfUJT4JA51jRDI[Vz?GnW1
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servant_timer.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servant_timer.v
+!i122 23
+L0 2 36
+R4
+r1
+!s85 0
+31
+R20
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servant_timer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servant_timer.v|
+!i113 1
+R6
+R22
+R7
+vservile
+R19
+!i10b 1
+!s100 KlOG=UN:GH=cWSnU]PnMB2
+R2
+IFRNY;=j=`_CH6BBnF6d^M1
+R3
+R0
+R15
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile/servile.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile/servile.v
+!i122 22
+L0 9 270
+R4
+r1
+!s85 0
+31
+R20
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile/servile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile/servile.v|
+!i113 1
+R6
+Z26 !s92 -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile
+R7
+vservile_arbiter
+R19
+!i10b 1
+!s100 n_[jcHz=9LjmcW:ZUfWji2
+R2
+IURg4?@ojd0X`8jn:bW@?B3
+R3
+R0
+R21
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile/servile_arbiter.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile/servile_arbiter.v
+!i122 21
+L0 9 37
+R4
+r1
+!s85 0
+31
+R20
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile/servile_arbiter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile/servile_arbiter.v|
+!i113 1
+R6
+R26
+R7
+vservile_mux
+R19
+!i10b 1
+!s100 5=G4o35m`?bXWclH^H<IG3
+R2
+IU2nRjege3=UL5REV;]C8K1
+R3
+R0
+w1742864247
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile/servile_mux.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile/servile_mux.v
+!i122 20
+L0 8 92
+R4
+r1
+!s85 0
+31
+R20
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile/servile_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servile_1.3.0/servile/servile_mux.v|
+!i113 1
+R6
+R26
+R7
+vservive
+R23
+!i10b 1
+!s100 [R<Y:@R5Y@XU7^3HGKoj_3
+R2
+IU1aMBko4Ea`3n>5gA_NDd0
+R3
+R0
+w1733997427
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servive.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servive.v
+!i122 27
+L0 2 35
+R4
+r1
+!s85 0
+31
+R25
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servive.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servive.v|
+!i113 1
+R6
+R22
+R7
+vservive_clock_gen
+R23
+!i10b 1
+!s100 VcPB4o1LeGU6:60HWdPfB1
+R2
+I`@XnXFIE;bHQLCGNZEKYk1
+R3
+R0
+w1734557397
+8D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servive_clock_gen.v
+FD:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servive_clock_gen.v
+!i122 26
+L0 2 33
+R4
+r1
+!s85 0
+31
+R25
+!s107 D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servive_clock_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant|D:/serv_project/build/servant_1.3.0/de0_nano-quartus/src/servant_1.3.0/servant/servive_clock_gen.v|
+!i113 1
+R6
+R22
+R7
+vuart_rx
+R1
+!i10b 1
+!s100 h_dRAZ;fzKNTTLS;>bRBU2
+R2
+IL_eo>Y;@NE8[EAhPFIG551
+R3
+R0
+w1745083615
+8D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/uart_rx.v
+FD:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/uart_rx.v
+!i122 0
+L0 1 53
+R4
+r1
+!s85 0
+31
+!s108 1745099621.000000
+!s107 D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/uart_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules|D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/uart_rx.v|
+!i113 1
+R6
+R13
+R7

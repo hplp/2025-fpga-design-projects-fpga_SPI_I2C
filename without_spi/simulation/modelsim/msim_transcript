@@ -1,0 +1,442 @@
+# Reading pref.tcl
+# do servant_1_3_0_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/Software/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules {D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/uart_rx.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:12:59 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules" D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 21:12:59 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules {D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:12:59 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules" D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v 
+# -- Compiling module serial_out_jtag_uart_0_sim_scfifo_w
+# -- Compiling module serial_out_jtag_uart_0_scfifo_w
+# -- Compiling module serial_out_jtag_uart_0_sim_scfifo_r
+# -- Compiling module serial_out_jtag_uart_0_scfifo_r
+# -- Compiling module serial_out_jtag_uart_0
+# 
+# Top level modules:
+# 	serial_out_jtag_uart_0
+# End time: 21:12:59 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/serial_out/synthesis {D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:12:59 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/serial_out/synthesis" D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v 
+# -- Compiling module serial_out
+# 
+# Top level modules:
+# 	serial_out
+# End time: 21:12:59 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl {D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_bufreg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:12:59 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl" D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_bufreg.v 
+# -- Compiling module serv_bufreg
+# 
+# Top level modules:
+# 	serv_bufreg
+# End time: 21:12:59 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl {D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_bufreg2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:12:59 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl" D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_bufreg2.v 
+# -- Compiling module serv_bufreg2
+# 
+# Top level modules:
+# 	serv_bufreg2
+# End time: 21:12:59 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl {D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:12:59 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl" D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_alu.v 
+# -- Compiling module serv_alu
+# 
+# Top level modules:
+# 	serv_alu
+# End time: 21:12:59 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl {D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_csr.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:12:59 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl" D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_csr.v 
+# -- Compiling module serv_csr
+# 
+# Top level modules:
+# 	serv_csr
+# End time: 21:12:59 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl {D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_ctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:12:59 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl" D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_ctrl.v 
+# -- Compiling module serv_ctrl
+# 
+# Top level modules:
+# 	serv_ctrl
+# End time: 21:13:00 on Mar 29,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl {D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_decode.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:00 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl" D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_decode.v 
+# -- Compiling module serv_decode
+# 
+# Top level modules:
+# 	serv_decode
+# End time: 21:13:00 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl {D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_immdec.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:00 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl" D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_immdec.v 
+# -- Compiling module serv_immdec
+# 
+# Top level modules:
+# 	serv_immdec
+# End time: 21:13:00 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl {D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_mem_if.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:00 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl" D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_mem_if.v 
+# -- Compiling module serv_mem_if
+# 
+# Top level modules:
+# 	serv_mem_if
+# End time: 21:13:00 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl {D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_if.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:00 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl" D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_if.v 
+# -- Compiling module serv_rf_if
+# 
+# Top level modules:
+# 	serv_rf_if
+# End time: 21:13:00 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl {D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_ram_if.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:00 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl" D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_ram_if.v 
+# -- Compiling module serv_rf_ram_if
+# 
+# Top level modules:
+# 	serv_rf_ram_if
+# End time: 21:13:00 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl {D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:00 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl" D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_ram.v 
+# -- Compiling module serv_rf_ram
+# 
+# Top level modules:
+# 	serv_rf_ram
+# End time: 21:13:00 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl {D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_state.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:00 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl" D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_state.v 
+# -- Compiling module serv_state
+# 
+# Top level modules:
+# 	serv_state
+# End time: 21:13:01 on Mar 29,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl {D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:01 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl" D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v 
+# -- Compiling module serv_top
+# 
+# Top level modules:
+# 	serv_top
+# End time: 21:13:01 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile {D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile_mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:01 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile" D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile_mux.v 
+# -- Compiling module servile_mux
+# 
+# Top level modules:
+# 	servile_mux
+# End time: 21:13:01 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile {D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile_arbiter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:01 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile" D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile_arbiter.v 
+# -- Compiling module servile_arbiter
+# 
+# Top level modules:
+# 	servile_arbiter
+# End time: 21:13:01 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile {D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:01 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile" D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile.v 
+# -- Compiling module servile
+# 
+# Top level modules:
+# 	servile
+# End time: 21:13:01 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant {D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_timer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:01 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant" D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_timer.v 
+# -- Compiling module servant_timer
+# 
+# Top level modules:
+# 	servant_timer
+# End time: 21:13:01 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant {D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_gpio.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:01 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant" D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_gpio.v 
+# -- Compiling module servant_gpio
+# 
+# Top level modules:
+# 	servant_gpio
+# End time: 21:13:01 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant {D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:01 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant" D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_mux.v 
+# -- Compiling module servant_mux
+# 
+# Top level modules:
+# 	servant_mux
+# End time: 21:13:01 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant {D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:02 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant" D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant.v 
+# -- Compiling module servant
+# 
+# Top level modules:
+# 	servant
+# End time: 21:13:02 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant {D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:02 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant" D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v 
+# -- Compiling module servive_clock_gen
+# 
+# Top level modules:
+# 	servive_clock_gen
+# End time: 21:13:02 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant {D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:02 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant" D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive.v 
+# -- Compiling module servive
+# 
+# Top level modules:
+# 	servive
+# End time: 21:13:02 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant {D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_ram_quartus.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:02 on Mar 29,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant" D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_ram_quartus.sv 
+# -- Compiling module servant_ram
+# 
+# Top level modules:
+# 	servant_ram
+# End time: 21:13:02 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/bench {D:/serv_project/build/servant_1.3.0/without_spi/src/bench/servant_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:02 on Mar 29,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_project/build/servant_1.3.0/without_spi/src/bench" D:/serv_project/build/servant_1.3.0/without_spi/src/bench/servant_tb.v 
+# -- Compiling module servant_tb
+# 
+# Top level modules:
+# 	servant_tb
+# End time: 21:13:02 on Mar 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  servant_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" servant_tb 
+# Start time: 21:13:02 on Mar 29,2025
+# Loading work.servant_tb
+# Loading work.servive
+# Loading work.servive_clock_gen
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.servant
+# Loading work.servant_mux
+# Loading sv_std.std
+# Loading work.servant_ram
+# Loading work.servant_timer
+# Loading work.servant_gpio
+# Loading work.serv_rf_ram
+# Loading work.servile
+# Loading work.servile_mux
+# Loading work.servile_arbiter
+# Loading work.serv_rf_ram_if
+# Loading work.serv_top
+# Loading work.serv_state
+# Loading work.serv_decode
+# Loading work.serv_immdec
+# Loading work.serv_bufreg
+# Loading work.serv_bufreg2
+# Loading work.serv_ctrl
+# Loading work.serv_alu
+# Loading work.serv_rf_if
+# Loading work.serv_mem_if
+# Loading work.serial_out
+# Loading work.uart_rx
+# Loading work.serial_out_jtag_uart_0
+# Loading work.serial_out_jtag_uart_0_scfifo_w
+# Loading work.serial_out_jtag_uart_0_sim_scfifo_w
+# Loading work.serial_out_jtag_uart_0_scfifo_r
+# Loading work.serial_out_jtag_uart_0_sim_scfifo_r
+# Loading altera_mf_ver.MF_stratix_pll
+# Loading altera_mf_ver.stx_m_cntr
+# Loading altera_mf_ver.stx_n_cntr
+# Loading altera_mf_ver.stx_scale_cntr
+# Loading altera_mf_ver.MF_pll_reg
+# Loading altera_mf_ver.dffp
+# Loading work.serv_csr
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /servant_tb/dut File: D:/serv_project/build/servant_1.3.0/without_spi/src/bench/servant_tb.v Line: 28
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/bench/servant_tb.v(28): [TFMPC] - Missing connection for port 'uart_txd'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pll'.  Expected 37, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /servant_tb/dut/clock_gen/pll File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v Line: 28
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'fbin'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'pllena'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'clkswitch'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'pfdena'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'clkena'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'extclkena'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scanaclr'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scanclkena'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scanread'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scanwrite'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scandata'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'phasecounterselect'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'phaseupdown'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'phasestep'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'configupdate'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'fbmimicbidir'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'extclk'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'enable0'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'enable1'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'activeclock'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'clkloss'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scandataout'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scandone'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'sclkout0'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'sclkout1'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'phasedone'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'vcooverrange'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'vcounderrange'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'fbout'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'fref'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'icdrclk'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'jtag_uart_0_kavish'.  Expected 12, found 11.
+#    Time: 0 ps  Iteration: 0  Instance: /servant_tb/dut/serial_out/jtag_uart_0_kavish File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v Line: 86
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v(86): [TFMPC] - Missing connection for port 'dataavailable'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Preloading servant_tb.dut.servant.ram from D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/sw/hello_uart.hex
+#  Note : Stratix PLL was reset
+# Time: 0  Instance: servant_tb.dut.clock_gen.pll.stratix_pll.pll0
+#  Note : Stratix PLL locked to incoming clock
+# Time: 403000  Instance: servant_tb.dut.clock_gen.pll.stratix_pll.pll0
+Hadd wave -position insertpoint  \
+sim:/servant_tb/dut/serial_out/uart_rx_inst/clk \
+sim:/servant_tb/dut/serial_out/uart_rx_inst/rx
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /servant_tb/dut File: D:/serv_project/build/servant_1.3.0/without_spi/src/bench/servant_tb.v Line: 28
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/bench/servant_tb.v(28): [TFMPC] - Missing connection for port 'uart_txd'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pll'.  Expected 37, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /servant_tb/dut/clock_gen/pll File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v Line: 28
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'fbin'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'pllena'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'clkswitch'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'pfdena'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'clkena'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'extclkena'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scanaclr'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scanclkena'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scanread'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scanwrite'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scandata'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'phasecounterselect'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'phaseupdown'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'phasestep'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'configupdate'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'fbmimicbidir'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'extclk'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'enable0'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'enable1'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'activeclock'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'clkloss'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scandataout'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'scandone'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'sclkout0'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'sclkout1'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'phasedone'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'vcooverrange'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'vcounderrange'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'fbout'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'fref'.
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v(28): [TFMPC] - Missing connection for port 'icdrclk'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'jtag_uart_0_kavish'.  Expected 12, found 11.
+#    Time: 0 ps  Iteration: 0  Instance: /servant_tb/dut/serial_out/jtag_uart_0_kavish File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v Line: 86
+# ** Warning: (vsim-3722) D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v(86): [TFMPC] - Missing connection for port 'dataavailable'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Preloading servant_tb.dut.servant.ram from D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/sw/hello_uart.hex
+#  Note : Stratix PLL was reset
+# Time: 0  Instance: servant_tb.dut.clock_gen.pll.stratix_pll.pll0
+#  Note : Stratix PLL locked to incoming clock
+# Time: 403000  Instance: servant_tb.dut.clock_gen.pll.stratix_pll.pll0
+Hi, # End time: 21:18:33 on Mar 29,2025, Elapsed time: 0:05:31
+# Errors: 0, Warnings: 38

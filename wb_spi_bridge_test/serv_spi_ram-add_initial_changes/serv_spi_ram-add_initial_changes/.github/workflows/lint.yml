@@ -1,0 +1,22 @@
+name: Run linter
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    name: Linter
+    env:
+      REPO : serv
+      VLNV : serv
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          path: serv
+      - run: sudo apt install verilator
+      - run: pip3 install fusesoc
+      - run: fusesoc library add $REPO $GITHUB_WORKSPACE/$REPO
+      - run: fusesoc run --target=lint $VLNV
+      - run: fusesoc run --target=lint servant
+      - run: fusesoc run --target=lint serving

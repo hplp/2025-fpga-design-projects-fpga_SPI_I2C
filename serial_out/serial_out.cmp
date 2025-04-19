@@ -1,0 +1,3 @@
+	component serial_out is
+	end component serial_out;
+

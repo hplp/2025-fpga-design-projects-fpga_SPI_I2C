@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at servant_spi_ram.v(30): always construct contains both blocking and non-blocking assignments File: D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi/servant_spi_ram.v Line: 30

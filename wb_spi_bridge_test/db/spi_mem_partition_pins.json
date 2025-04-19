@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "spi_sck",
+					"strict" : false
+				},
+				{
+					"name" : "spi_ss",
+					"strict" : false
+				},
+				{
+					"name" : "spi_mosi",
+					"strict" : false
+				},
+				{
+					"name" : "spi_miso_l",
+					"strict" : false
+				},
+				{
+					"name" : "spi_sck_l",
+					"strict" : false
+				},
+				{
+					"name" : "spi_ss_l",
+					"strict" : false
+				},
+				{
+					"name" : "spi_mosi_l",
+					"strict" : false
+				},
+				{
+					"name" : "done",
+					"strict" : false
+				},
+				{
+					"name" : "correct",
+					"strict" : false
+				},
+				{
+					"name" : "btn_test",
+					"strict" : false
+				},
+				{
+					"name" : "spi_miso",
+					"strict" : false
+				},
+				{
+					"name" : "i_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "i_btn_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

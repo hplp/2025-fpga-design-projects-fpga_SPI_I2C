@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2024.11.19.03:13:07"
+ outputDirectory="D:/serv_project/build/servant_1.3.0/serial_out/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone IV E"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="EP4CE22F17C6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="6"
+     onHdl="0"
+     affectsHdl="1" />
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="serial_out:1.0:AUTO_DEVICE=EP4CE22F17C6,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1732003986,AUTO_UNIQUE_ID=(altera_avalon_jtag_uart:23.1:allowMultipleConnections=false,avalonSpec=2.0,clkFreq=0,enableInteractiveInput=false,enableInteractiveOutput=false,hubInstanceID=0,legacySignalAllow=false,readBufferDepth=64,readIRQThreshold=8,simInputCharacterStream=,simInteractiveOptions=NO_INTERACTIVE_WINDOWS,useRegistersForReadBuffer=false,useRegistersForWriteBuffer=false,useRelativePathForSimFile=false,writeBufferDepth=64,writeIRQThreshold=8)"
+   instancePathKey="serial_out"
+   kind="serial_out"
+   version="1.0"
+   name="serial_out">
+  <parameter name="AUTO_GENERATION_ID" value="1732003986" />
+  <parameter name="AUTO_DEVICE" value="EP4CE22F17C6" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
+  <generatedFiles>
+   <file
+       path="D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v"
+       type="VERILOG"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/serv_project/build/servant_1.3.0/de0_nano-quartus/serial_out.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="D:/software/intelfpga_lite/23.1std/ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/altera_avalon_jtag_uart_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="serial_out">queue size: 0 starting:serial_out "serial_out"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="serial_out"><![CDATA["<b>serial_out</b>" reuses <b>altera_avalon_jtag_uart</b> "<b>submodules/serial_out_jtag_uart_0</b>"]]></message>
+   <message level="Debug" culprit="serial_out">queue size: 0 starting:altera_avalon_jtag_uart "submodules/serial_out_jtag_uart_0"</message>
+   <message level="Info" culprit="jtag_uart_0">Starting RTL generation for module 'serial_out_jtag_uart_0'</message>
+   <message level="Info" culprit="jtag_uart_0"><![CDATA[  Generation command is [exec cmd /c {set LC_ALL=C&& D:/software/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I D:/software/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I D:/software/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I D:/software/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I D:/software/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I D:/software/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/software/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=serial_out_jtag_uart_0 --dir=C:/Users/Asus/AppData/Local/Temp/alt0046_4041859598579954594.dir/0004_jtag_uart_0_gen/ --quartus_dir=D:/software/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/Asus/AppData/Local/Temp/alt0046_4041859598579954594.dir/0004_jtag_uart_0_gen//serial_out_jtag_uart_0_component_configuration.pl --do_build_sim=0}]]]></message>
+   <message level="Info" culprit="jtag_uart_0">Done RTL generation for module 'serial_out_jtag_uart_0'</message>
+   <message level="Info" culprit="jtag_uart_0"><![CDATA["<b>serial_out</b>" instantiated <b>altera_avalon_jtag_uart</b> "<b>jtag_uart_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_avalon_jtag_uart:23.1:allowMultipleConnections=false,avalonSpec=2.0,clkFreq=0,enableInteractiveInput=false,enableInteractiveOutput=false,hubInstanceID=0,legacySignalAllow=false,readBufferDepth=64,readIRQThreshold=8,simInputCharacterStream=,simInteractiveOptions=NO_INTERACTIVE_WINDOWS,useRegistersForReadBuffer=false,useRegistersForWriteBuffer=false,useRelativePathForSimFile=false,writeBufferDepth=64,writeIRQThreshold=8"
+   instancePathKey="serial_out:.:jtag_uart_0"
+   kind="altera_avalon_jtag_uart"
+   version="23.1"
+   name="serial_out_jtag_uart_0">
+  <parameter name="readBufferDepth" value="64" />
+  <parameter name="clkFreq" value="0" />
+  <parameter name="useRelativePathForSimFile" value="false" />
+  <parameter name="hubInstanceID" value="0" />
+  <parameter name="enableInteractiveInput" value="false" />
+  <parameter name="avalonSpec" value="2.0" />
+  <parameter name="simInputCharacterStream" value="" />
+  <parameter name="readIRQThreshold" value="8" />
+  <parameter name="useRegistersForWriteBuffer" value="false" />
+  <parameter name="useRegistersForReadBuffer" value="false" />
+  <parameter name="simInteractiveOptions" value="NO_INTERACTIVE_WINDOWS" />
+  <parameter name="enableInteractiveOutput" value="false" />
+  <parameter name="writeIRQThreshold" value="8" />
+  <parameter name="writeBufferDepth" value="64" />
+  <parameter name="allowMultipleConnections" value="false" />
+  <parameter name="legacySignalAllow" value="false" />
+  <generatedFiles>
+   <file
+       path="D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v"
+       type="VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="D:/software/intelfpga_lite/23.1std/ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/altera_avalon_jtag_uart_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="serial_out" as="jtag_uart_0" />
+  <messages>
+   <message level="Debug" culprit="serial_out">queue size: 0 starting:altera_avalon_jtag_uart "submodules/serial_out_jtag_uart_0"</message>
+   <message level="Info" culprit="jtag_uart_0">Starting RTL generation for module 'serial_out_jtag_uart_0'</message>
+   <message level="Info" culprit="jtag_uart_0"><![CDATA[  Generation command is [exec cmd /c {set LC_ALL=C&& D:/software/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I D:/software/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I D:/software/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I D:/software/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I D:/software/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I D:/software/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/software/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=serial_out_jtag_uart_0 --dir=C:/Users/Asus/AppData/Local/Temp/alt0046_4041859598579954594.dir/0004_jtag_uart_0_gen/ --quartus_dir=D:/software/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/Asus/AppData/Local/Temp/alt0046_4041859598579954594.dir/0004_jtag_uart_0_gen//serial_out_jtag_uart_0_component_configuration.pl --do_build_sim=0}]]]></message>
+   <message level="Info" culprit="jtag_uart_0">Done RTL generation for module 'serial_out_jtag_uart_0'</message>
+   <message level="Info" culprit="jtag_uart_0"><![CDATA["<b>serial_out</b>" instantiated <b>altera_avalon_jtag_uart</b> "<b>jtag_uart_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

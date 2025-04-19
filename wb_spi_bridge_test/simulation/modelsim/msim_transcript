@@ -1,0 +1,1103 @@
+# Reading pref.tcl
+# do spi_mem_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/Software/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/serv_temp {D:/serv_temp/spi_mem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:57:01 on Dec 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_temp" D:/serv_temp/spi_mem.v 
+# -- Compiling module spi_mem
+# 
+# Top level modules:
+# 	spi_mem
+# End time: 03:57:02 on Dec 10,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi {D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi/servant_spi_slave_if.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:57:02 on Dec 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi" D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi/servant_spi_slave_if.v 
+# -- Compiling module servant_spi_slave_if
+# 
+# Top level modules:
+# 	servant_spi_slave_if
+# End time: 03:57:02 on Dec 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi {D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi/servant_spi_ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:57:02 on Dec 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi" D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi/servant_spi_ram.v 
+# -- Compiling module servant_spi_ram
+# 
+# Top level modules:
+# 	servant_spi_ram
+# End time: 03:57:02 on Dec 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi {D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi/servant_spi_master_if.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:57:02 on Dec 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi" D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi/servant_spi_master_if.v 
+# -- Compiling module servant_spi_master_if
+# 
+# Top level modules:
+# 	servant_spi_master_if
+# End time: 03:57:02 on Dec 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/serv_temp {D:/serv_temp/spi_mem_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:57:02 on Dec 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_temp" D:/serv_temp/spi_mem_tb.v 
+# -- Compiling module spi_mem_tb
+# 
+# Top level modules:
+# 	spi_mem_tb
+# End time: 03:57:02 on Dec 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  spi_mem_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" spi_mem_tb 
+# Start time: 03:57:02 on Dec 10,2024
+# Loading work.spi_mem_tb
+# Loading work.spi_mem
+# Loading work.servant_spi_master_if
+# Loading work.servant_spi_slave_if
+# Loading work.servant_spi_ram
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Preloading spi_mem_tb.dut.ram from zephyr_hello.hex
+# Write to consequtive addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 04
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 0000000c, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 00000010, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000014, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 08
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000018, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000020, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000028, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 0c
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000024, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000030, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 0000003c, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 10
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000040, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000050, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 14
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 0000003c, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 00000050, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000064, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 18
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000048, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000060, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000078, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 1c
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 00000054, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000070, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 0000008c, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 20
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 00000060, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000080, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000a0, got 00
+# Write to interleaving addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 04
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 0000000c, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 06
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 08
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000018, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 0a
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 0c
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000024, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 0e
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 10
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 12
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 14
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 0000003c, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 16
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 18
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000048, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 1a
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 1c
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 00000054, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 1e
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 20
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 00000060, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 22
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Reading interleaving addresses
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 06
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 0a
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 0e
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 12
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 16
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 1a
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 1e
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 22
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Write to second addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 04
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 05
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 06
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 08
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 09
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 0a
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 0c
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 0d
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 0e
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 10
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 11
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 12
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 14
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 15
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 16
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 18
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 19
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 1a
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 1c
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 1d
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 1e
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 20
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 21
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 22
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Reading second address
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 05
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 09
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 0d
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 11
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 15
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 19
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 1d
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 21
+# Write to last addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 04
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 05
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 06
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 0000001c, got 07
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 08
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 09
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 0a
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000038, got 0b
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 0c
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 0d
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 0e
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000054, got 0f
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 10
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 11
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 12
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000070, got 13
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 14
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 15
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 16
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 0000008c, got 17
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 18
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 19
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 1a
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 000000a8, got 1b
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 1c
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 1d
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 1e
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 000000c4, got 1f
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 20
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 21
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 22
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000e0, got 23
+# Reading last address
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 0000001c, got 07
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000038, got 0b
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000054, got 0f
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000070, got 13
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 0000008c, got 17
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 000000a8, got 1b
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 000000c4, got 1f
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000e0, got 23
+# Testbench completed
+# ** Note: $finish    : D:/serv_temp/spi_mem_tb.v(281)
+#    Time: 211510 ns  Iteration: 0  Instance: /spi_mem_tb
+# 1
+# Break in Module spi_mem_tb at D:/serv_temp/spi_mem_tb.v line 281
+vlog -vlog01compat -work work +incdir+D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi/servant_spi_ram.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:58:06 on Dec 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi" D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi/servant_spi_ram.v 
+# -- Compiling module servant_spi_ram
+# 
+# Top level modules:
+# 	servant_spi_ram
+# End time: 03:58:06 on Dec 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.servant_spi_ram
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Preloading spi_mem_tb.dut.ram from zephyr_hello.hex
+# Write to consequtive addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 0000000c, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 00000010, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000014, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000018, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000020, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000028, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000024, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000030, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 0000003c, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000040, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000050, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 0000003c, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 00000050, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000064, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000048, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000060, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000078, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 00000054, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000070, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 0000008c, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 00000060, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000080, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000a0, got 00
+# Write to interleaving addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 0000000c, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000018, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000024, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 0000003c, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000048, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 00000054, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 00000060, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Reading interleaving addresses
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Write to second addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Reading second address
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 82
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 90
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 00
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 01
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 20
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 22
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 24
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 26
+# Write to last addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 0000001c, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000038, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000054, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000070, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 0000008c, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 000000a8, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 000000c4, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000e0, got 00
+# Reading last address
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 0000001c, got 01
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000038, got 30
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000054, got 5d
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000070, got fb
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 0000008c, got 00
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 000000a8, got 00
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 000000c4, got 00
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000e0, got 00
+# Testbench completed
+# ** Note: $finish    : D:/serv_temp/spi_mem_tb.v(281)
+#    Time: 211510 ns  Iteration: 0  Instance: /spi_mem_tb
+# 1
+# Break in Module spi_mem_tb at D:/serv_temp/spi_mem_tb.v line 281
+add wave -position insertpoint  \
+sim:/spi_mem_tb/dut/spi_slave_if/spi_sck \
+sim:/spi_mem_tb/dut/spi_slave_if/spi_cs \
+sim:/spi_mem_tb/dut/spi_slave_if/spi_mosi \
+sim:/spi_mem_tb/dut/spi_slave_if/spi_miso \
+sim:/spi_mem_tb/dut/spi_slave_if/sAddress \
+sim:/spi_mem_tb/dut/spi_slave_if/sCSn \
+sim:/spi_mem_tb/dut/spi_slave_if/sOEn \
+sim:/spi_mem_tb/dut/spi_slave_if/sWRn \
+sim:/spi_mem_tb/dut/spi_slave_if/sDqDir \
+sim:/spi_mem_tb/dut/spi_slave_if/sDqOut \
+sim:/spi_mem_tb/dut/spi_slave_if/sDqIn \
+sim:/spi_mem_tb/dut/spi_slave_if/rINBUF \
+sim:/spi_mem_tb/dut/spi_slave_if/rOUTBUF \
+sim:/spi_mem_tb/dut/spi_slave_if/rCnt \
+sim:/spi_mem_tb/dut/spi_slave_if/rCntOV \
+sim:/spi_mem_tb/dut/spi_slave_if/sCnt8 \
+sim:/spi_mem_tb/dut/spi_slave_if/rCmd \
+sim:/spi_mem_tb/dut/spi_slave_if/rState \
+sim:/spi_mem_tb/dut/spi_slave_if/rAddress \
+sim:/spi_mem_tb/dut/spi_slave_if/rReadFlag1 \
+sim:/spi_mem_tb/dut/spi_slave_if/rReadFlag2 \
+sim:/spi_mem_tb/dut/spi_slave_if/sRamOE \
+sim:/spi_mem_tb/dut/spi_slave_if/rWriteFlag1 \
+sim:/spi_mem_tb/dut/spi_slave_if/sRamWR \
+sim:/spi_mem_tb/dut/spi_slave_if/rCmdGotFlag
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Preloading spi_mem_tb.dut.ram from zephyr_hello.hex
+# Write to consequtive addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 0000000c, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 00000010, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000014, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000018, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000020, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000028, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000024, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000030, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 0000003c, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000040, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000050, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 0000003c, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 00000050, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000064, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000048, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000060, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000078, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 00000054, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000070, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 0000008c, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 00000060, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000080, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000a0, got 00
+# Write to interleaving addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 0000000c, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000018, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000024, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 0000003c, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000048, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 00000054, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 00000060, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Reading interleaving addresses
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Write to second addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Reading second address
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 82
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 90
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 00
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 01
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 20
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 22
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 24
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 26
+# Write to last addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 0000001c, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000038, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000054, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000070, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 0000008c, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 000000a8, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 000000c4, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000e0, got 00
+# Reading last address
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 0000001c, got 01
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000038, got 30
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000054, got 5d
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000070, got fb
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 0000008c, got 00
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 000000a8, got 00
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 000000c4, got 00
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000e0, got 00
+# Testbench completed
+# ** Note: $finish    : D:/serv_temp/spi_mem_tb.v(281)
+#    Time: 211510 ns  Iteration: 0  Instance: /spi_mem_tb
+# 1
+# Break in Module spi_mem_tb at D:/serv_temp/spi_mem_tb.v line 281
+vlog -vlog01compat -work work +incdir+D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi/servant_spi_ram.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:10:11 on Dec 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi" D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi/servant_spi_ram.v 
+# -- Compiling module servant_spi_ram
+# 
+# Top level modules:
+# 	servant_spi_ram
+# End time: 04:10:11 on Dec 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.servant_spi_ram
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Preloading spi_mem_tb.dut.ram from zephyr_hello.hex
+# Write to consequtive addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 0000000c, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 00000010, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000014, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000018, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000020, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000028, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000024, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000030, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 0000003c, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000040, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000050, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 0000003c, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 00000050, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000064, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000048, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000060, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000078, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 00000054, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000070, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 0000008c, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 00000060, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000080, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000a0, got 00
+# Write to interleaving addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 0000000c, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000018, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000024, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 0000003c, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000048, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 00000054, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 00000060, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Reading interleaving addresses
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Write to second addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Reading second address
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 82
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 90
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 00
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 01
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 20
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 22
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 24
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 26
+# Write to last addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 0000001c, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000038, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000054, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000070, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 0000008c, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 000000a8, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 000000c4, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000e0, got 00
+# Reading last address
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 0000001c, got 01
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000038, got 30
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000054, got 5d
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000070, got fb
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 0000008c, got 00
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 000000a8, got 00
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 000000c4, got 00
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000e0, got 00
+# Testbench completed
+# ** Note: $finish    : D:/serv_temp/spi_mem_tb.v(281)
+#    Time: 211510 ns  Iteration: 0  Instance: /spi_mem_tb
+# 1
+# Break in Module spi_mem_tb at D:/serv_temp/spi_mem_tb.v line 281
+add wave -position insertpoint  \
+sim:/spi_mem_tb/dut/ram/i_clk \
+sim:/spi_mem_tb/dut/ram/i_addr \
+sim:/spi_mem_tb/dut/ram/i_wdata \
+sim:/spi_mem_tb/dut/ram/i_we \
+sim:/spi_mem_tb/dut/ram/i_re \
+sim:/spi_mem_tb/dut/ram/o_rdata \
+sim:/spi_mem_tb/dut/ram/addr_hi \
+sim:/spi_mem_tb/dut/ram/addr_lo \
+sim:/spi_mem_tb/dut/ram/temp_store1 \
+sim:/spi_mem_tb/dut/ram/temp_store2 \
+sim:/spi_mem_tb/dut/ram/temp_addr \
+sim:/spi_mem_tb/dut/ram/temp_wr_en
+add wave -position insertpoint  \
+sim:/spi_mem_tb/dut/ram/mem
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Preloading spi_mem_tb.dut.ram from zephyr_hello.hex
+# Write to consequtive addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 0000000c, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 00000010, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000014, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000018, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000020, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000028, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000024, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000030, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 0000003c, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000040, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000050, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 0000003c, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 00000050, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000064, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000048, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000060, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000078, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 00000054, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000070, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 0000008c, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 00000060, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000080, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000a0, got 00
+# Write to interleaving addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 0000000c, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000018, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000024, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 0000003c, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000048, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 00000054, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 00000060, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Reading interleaving addresses
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Write to second addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 00000008, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000010, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000018, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000020, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 00000028, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 00000030, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 00000038, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 00000040, got 00
+# Reading second address
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 82
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 90
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 00
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 01
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 20
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 22
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 24
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 26
+# Write to last addresses
+# ERROR: Address 00000000: Byte 0 mismatch. Expected 00000000, got 97
+# ERROR: Address 00000000: Byte 1 mismatch. Expected 00000000, got 02
+# ERROR: Address 00000004: Byte 0 mismatch. Expected 00000008, got 93
+# ERROR: Address 00000004: Byte 1 mismatch. Expected 00000018, got 82
+# ERROR: Address 00000004: Byte 2 mismatch. Expected 0000000c, got 02
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 0000001c, got 01
+# ERROR: Address 00000008: Byte 0 mismatch. Expected 00000010, got 73
+# ERROR: Address 00000008: Byte 1 mismatch. Expected 00000030, got 90
+# ERROR: Address 00000008: Byte 2 mismatch. Expected 00000018, got 52
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000038, got 30
+# ERROR: Address 0000000c: Byte 0 mismatch. Expected 00000018, got 6f
+# ERROR: Address 0000000c: Byte 1 mismatch. Expected 00000048, got 00
+# ERROR: Address 0000000c: Byte 2 mismatch. Expected 00000024, got 80
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000054, got 5d
+# ERROR: Address 00000010: Byte 0 mismatch. Expected 00000020, got 13
+# ERROR: Address 00000010: Byte 1 mismatch. Expected 00000060, got 01
+# ERROR: Address 00000010: Byte 2 mismatch. Expected 00000030, got 01
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000070, got fb
+# ERROR: Address 00000014: Byte 0 mismatch. Expected 00000028, got 23
+# ERROR: Address 00000014: Byte 1 mismatch. Expected 00000078, got 20
+# ERROR: Address 00000014: Byte 2 mismatch. Expected 0000003c, got 11
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 0000008c, got 00
+# ERROR: Address 00000018: Byte 0 mismatch. Expected 00000030, got 23
+# ERROR: Address 00000018: Byte 1 mismatch. Expected 00000090, got 22
+# ERROR: Address 00000018: Byte 2 mismatch. Expected 00000048, got 31
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 000000a8, got 00
+# ERROR: Address 0000001c: Byte 0 mismatch. Expected 00000038, got 23
+# ERROR: Address 0000001c: Byte 1 mismatch. Expected 000000a8, got 24
+# ERROR: Address 0000001c: Byte 2 mismatch. Expected 00000054, got 41
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 000000c4, got 00
+# ERROR: Address 00000020: Byte 0 mismatch. Expected 00000040, got 23
+# ERROR: Address 00000020: Byte 1 mismatch. Expected 000000c0, got 26
+# ERROR: Address 00000020: Byte 2 mismatch. Expected 00000060, got 51
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000e0, got 00
+# Reading last address
+# ERROR: Address 00000004: Byte 3 mismatch. Expected 0000001c, got 01
+# ERROR: Address 00000008: Byte 3 mismatch. Expected 00000038, got 30
+# ERROR: Address 0000000c: Byte 3 mismatch. Expected 00000054, got 5d
+# ERROR: Address 00000010: Byte 3 mismatch. Expected 00000070, got fb
+# ERROR: Address 00000014: Byte 3 mismatch. Expected 0000008c, got 00
+# ERROR: Address 00000018: Byte 3 mismatch. Expected 000000a8, got 00
+# ERROR: Address 0000001c: Byte 3 mismatch. Expected 000000c4, got 00
+# ERROR: Address 00000020: Byte 3 mismatch. Expected 000000e0, got 00
+# Testbench completed
+# ** Note: $finish    : D:/serv_temp/spi_mem_tb.v(281)
+#    Time: 211510 ns  Iteration: 0  Instance: /spi_mem_tb
+# 1
+# Break in Module spi_mem_tb at D:/serv_temp/spi_mem_tb.v line 281
+vlog -vlog01compat -work work +incdir+D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi/servant_spi_ram.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:21:22 on Dec 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi" D:/serv_temp/serv_spi_ram-add_initial_changes/serv_spi_ram-add_initial_changes/servant_spi/servant_spi_ram.v 
+# -- Compiling module servant_spi_ram
+# 
+# Top level modules:
+# 	servant_spi_ram
+# End time: 04:21:23 on Dec 10,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.servant_spi_ram
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Preloading spi_mem_tb.dut.ram from zephyr_hello.hex
+# Write to consequtive addresses
+# Write to interleaving addresses
+# Reading interleaving addresses
+# Write to second addresses
+# Reading second address
+# Write to last addresses
+# Reading last address
+# Testbench completed
+# ** Note: $finish    : D:/serv_temp/spi_mem_tb.v(281)
+#    Time: 211510 ns  Iteration: 0  Instance: /spi_mem_tb
+# 1
+# Break in Module spi_mem_tb at D:/serv_temp/spi_mem_tb.v line 281
+# End time: 04:22:56 on Dec 10,2024, Elapsed time: 0:25:54
+# Errors: 0, Warnings: 0

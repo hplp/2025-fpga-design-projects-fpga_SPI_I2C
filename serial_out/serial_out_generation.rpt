@@ -1,0 +1,47 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\serv_project\build\servant_1.3.0\de0_nano-quartus\serial_out.qsys --block-symbol-file --output-directory=D:\serv_project\build\servant_1.3.0\serial_out --family="Cyclone IV E" --part=EP4CE22F17C6
+Progress: Loading de0_nano-quartus/serial_out.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 23.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: serial_out.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Error: serial_out.jtag_uart_0: jtag_uart_0.clk must be connected to a clock output
+Warning: serial_out.jtag_uart_0: Interrupt sender jtag_uart_0.irq is not connected to an interrupt receiver
+Warning: serial_out.jtag_uart_0: jtag_uart_0.avalon_jtag_slave must be connected to an Avalon-MM master
+Error: serial_out.jtag_uart_0: jtag_uart_0.reset must be connected to a reset source
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\serv_project\build\servant_1.3.0\de0_nano-quartus\serial_out.qsys --synthesis=VERILOG --greybox --output-directory=D:\serv_project\build\servant_1.3.0\serial_out\synthesis --family="Cyclone IV E" --part=EP4CE22F17C6
+Progress: Loading de0_nano-quartus/serial_out.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 23.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: serial_out.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Error: serial_out.jtag_uart_0: jtag_uart_0.clk must be connected to a clock output
+Warning: serial_out.jtag_uart_0: Interrupt sender jtag_uart_0.irq is not connected to an interrupt receiver
+Warning: serial_out.jtag_uart_0: jtag_uart_0.avalon_jtag_slave must be connected to an Avalon-MM master
+Error: serial_out.jtag_uart_0: jtag_uart_0.reset must be connected to a reset source
+Info: serial_out: Generating serial_out "serial_out" for QUARTUS_SYNTH
+Info: jtag_uart_0: Starting RTL generation for module 'serial_out_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec cmd /c {set LC_ALL=C&& D:/software/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I D:/software/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I D:/software/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I D:/software/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I D:/software/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I D:/software/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/software/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=serial_out_jtag_uart_0 --dir=C:/Users/Asus/AppData/Local/Temp/alt0046_4041859598579954594.dir/0004_jtag_uart_0_gen/ --quartus_dir=D:/software/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/Asus/AppData/Local/Temp/alt0046_4041859598579954594.dir/0004_jtag_uart_0_gen//serial_out_jtag_uart_0_component_configuration.pl --do_build_sim=0}]
+Info: jtag_uart_0: Done RTL generation for module 'serial_out_jtag_uart_0'
+Info: jtag_uart_0: "serial_out" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: serial_out: Done "serial_out" with 2 modules, 2 files
+Info: Generating third-party timing and resource estimation model ...
+Info: Done generating third-party timing and resource estimation model.
+Error: qsys-generate failed with exit code 1: 2 Errors, 3 Warnings
+Info: Finished: Create HDL design files for synthesis

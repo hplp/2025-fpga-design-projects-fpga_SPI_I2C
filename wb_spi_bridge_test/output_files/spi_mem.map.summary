@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Apr 19 17:14:56 2025
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : spi_mem
+Top-level Entity Name : spi_mem
+Family : Cyclone IV E
+Total logic elements : 227
+    Total combinational functions : 177
+    Dedicated logic registers : 122
+Total registers : 122
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
