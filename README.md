@@ -52,7 +52,8 @@ Currently, we are in the debugging phase of the full system implementation. The 
 ## File structure
 
 - [serial_out](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/serial_out): JTAG interface to collect the UART output of the SERV and print it on a terminal
-- [testbench](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/testbench): Verilog testbench for Wishbone to SPI convertor
-- [with_spi_fram](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/with_spi_fram): Verilog testbench for full architecture
-- [verilator_tb](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/verilator_tb): Verilator testbench for full architecture
+- [testbench](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/testbench): Verilog testbench for Wishbone-to-SPI convertor simulations
+- [wb_spi_bridge_test](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/wb_spi_bridge_test): Hardware test for the Wishbone-to-SPI convertor
+- [with_spi_fram](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/with_spi_fram): Verilog testbench for full architecture simulations
+- [verilator_tb](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/verilator_tb): Verilator testbench for full architecture simulations
 - [fram_connect](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/fram_connect): Hardware implementation of the full architecture
