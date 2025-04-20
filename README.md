@@ -1,5 +1,4 @@
-# Project_Template
-
+# FPGA Project - Phase II
 
 ## Team Name:
 FPGA Project Group 8
@@ -10,55 +9,50 @@ FPGA Project Group 8
 - Kavish Ranawella(bue6zr)
 
 
-## Project Title:
-Optimizing SPI-to-I2C Conversion using LLM prompting techniques
+## Project Title: (changed with Professor's permission)
+Serial RISC-V (SERV) with SPI memory access
 
 
 ## Project Description:
-SPI-to-I2C conversion is widely used in embedded systems and SoCs to
-enable communication between devices operating on different protocols. A conventional
-SPI-to-I2C conversion involves significant buffering, where the entire SPI message is first
-collected before being transmitted as an I2C message. This introduces overhead and
-delays due to the serial-to-parallel-to-serial conversion. To achieve a more efficient, near
-real-time SPI-to-I2C conversion, buffering must be kept at a minimum. We aim to leverage
-LLM-assisted optimization techniques to refine this conversion, reducing latency and
-improving efficiency by enabling a more direct serial-to-serial data transfer
+Serial RISC-V (SERV) is bit-serial CPU which claims to be the world's smallest RISC-V CPU. In the current implementation, even though most of the core components are serialized, Register File and Memory accessing is still done parallely via a Wishbone interface. With this project, we aim to achieve pure serialization by implementing memory accessing through a Serial Peripheral Interface (SPI).
 
 
 ## Key Objectives:
-- Understanding protocol bridging in a pure serial-to-serial data transfer process
-- Exploring the usability of LLMs in FPGA designing optimization
-- Evaluate the LLM's capabilities in uderstanding hardware designs
-
-## Technology Stack:
-- Vitis HLS
-- Vivado
-- C++
-- Verilog
-- I2C FRAM
-- ChatGPT
-
+- Integrate SPI-based memory access into the SERV processor to enable fully serial data handling.
+- Minimize logic-to-memory interconnect complexity by reducing bus width and interface overhead.
+- Explore architectural trade-offs in designing a purely serial RISC-V system.
+- Deepen understanding of serial processor behavior and execution flow through hands-on implementation.
 
 ## Expected Outcomes:
-- Tested framework for the SPI-to-I2C convertor (simulation and hardware)
-- ChatGPT workflow to generate two functional versions of the SPI-to-I2C convertor: the
-HLS version and the Verilog version
-- ChatGPT workflow to optimize the two versions while maintaining functionality
-- Compiled results to compare the two approaches based on the amount of prompting
-done and the level of optimization reached
-- Documentation with the prompting journey to be used as a case study
+
+- Simulation of the SERV processor with SPI memory access using Verilator.
+- Hardware implementation of SERV integrated with SPI FRAM.
+- Demonstration of bare-metal program execution on the implemented hardware.
 
 ## Tasks:
-- Create a test framework for verilog and HLS approaches (bue6zr & bp2sq)
-- Generate a functionally verified Verilog code for the SPI-to-I2C convertor (bue6zr)
-- Generate a functionally verified HLS code for the SPI-to-I2C convertor (bp2sq)
-- Optimize the Verilog code using ChatGPT (bue6zr)
-- Optimize the HLS code using ChatGPT (bp2sq)
-- Documentation (bue6zr & bp2sq)
 
+- Develop Verilog code for a Wishbone-to-SPI converter.
+- Verify the Wishbone-to-SPI converter through simulation and hardware testing.
+- Integrate the Wishbone-to-SPI converter with the SERV CPU.
+- Perform full architecture verification using simulation tools (ModelSim, Verilator).
+- Validate the complete design on hardware using the Altera DE0-Nano board and SPI FRAM.
+- Run and demonstrate bare-metal programs on the final hardware implementation.
+- Prepare comprehensive documentation covering the design, integration, testing, and results.
 
-## Timeline:
-- Create a test framework for verilog and HLS approaches (upto 1 weeks)
-- Generate a functionally verified Verilog and HLS codes for the SPI-to-I2C convertor (0.5 weeks)
-- Optimize the Verilog and HLS codes using ChatGPT (1.5 weeks)
-- Documentation (1 weeks)
+## Progress so far:
+
+Progress has been made across multiple aspects of the project in parallel. The following milestones have been achieved:
+
+- Completed development of the Wishbone-to-SPI converter in Verilog.
+- Successfully verified the converter both through simulation and hardware testing.
+- Integrated the converter into the SERV CPU core.
+
+Currently, we are in the debugging phase of the full system implementation. The hardware platform includes the Altera DE0-Nano FPGA board interfaced with an SPI FRAM module.
+
+## File structure
+
+- [serial_out](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/serial_out): JTAG interface to collect the UART output of the SERV and print it on a terminal
+- [testbench](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/testbench): Verilog testbench for Wishbone to SPI convertor
+- [with_spi_fram](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/with_spi_fram): Verilog testbench for full architecture
+- [verilator_tb](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/verilator_tb): Verilator testbench for full architecture
+- [fram_connect](https://github.com/hplp/2025-fpga-design-projects-fpga_SPI_I2C/tree/main/fram_connect): Hardware implementation of the full architecture
