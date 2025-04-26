@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at servant_spi_master_if.v(17): object "temp_state" differs only in case from object "TEMP_STATE" in the same scope File: D:/serv_project/build/servant_1.3.0/fram_connect_debug/src/servant_1.3.0/servant_spi/servant_spi_master_if.v Line: 17

@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "spi_sck",
+					"strict" : false
+				},
+				{
+					"name" : "spi_ss",
+					"strict" : false
+				},
+				{
+					"name" : "spi_mosi",
+					"strict" : false
+				},
+				{
+					"name" : "q",
+					"strict" : false
+				},
+				{
+					"name" : "uart_txd",
+					"strict" : false
+				},
+				{
+					"name" : "led1",
+					"strict" : false
+				},
+				{
+					"name" : "led2",
+					"strict" : false
+				},
+				{
+					"name" : "led3",
+					"strict" : false
+				},
+				{
+					"name" : "led4",
+					"strict" : false
+				},
+				{
+					"name" : "led5",
+					"strict" : false
+				},
+				{
+					"name" : "led6",
+					"strict" : false
+				},
+				{
+					"name" : "led7",
+					"strict" : false
+				},
+				{
+					"name" : "i_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "i_clk",
+					"strict" : false
+				},
+				{
+					"name" : "spi_miso",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
