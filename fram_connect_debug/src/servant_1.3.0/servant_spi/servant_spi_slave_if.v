@@ -13,7 +13,10 @@ module servant_spi_slave_if
     output wire sWRn,
     output wire sDqDir,
     output wire [7:0] sDqOut,
-    input wire [7:0] sDqIn);
+    input wire [7:0] sDqIn,
+    output reg [31:0] temp_store,
+    output reg accessed,
+    output reg [3:0] temp_cnt);
     
     reg [7:0] rINBUF;
     reg [7:0] rOUTBUF;
@@ -77,13 +80,21 @@ module servant_spi_slave_if
             rCmdGotFlag <= 0; 
             rCmd  <= 0; 
 			rCntOV <= 1'b0;
+            accessed <= 1'b0;
+            temp_store[3:0] <= temp_cnt;
         end
         else
-        if(sCnt8)begin
+        if(sCnt8)begin             
+            temp_cnt <= temp_cnt + 4'h1;
             if(!rCmdGotFlag)begin
                 rCmdGotFlag <= 1'b1;
 				rCntOV <= 1'b1;
-                rCmd <= rINBUF; 
+                rCmd <= rINBUF;
+                if (!accessed) begin
+                    if (temp_cnt == 4'h0) temp_store[7:0] <= rINBUF;
+                    if (temp_cnt == 4'h0) temp_store[31:8] <= 24'h0;
+                    //temp_cnt <= temp_cnt + 4'h1;
+                end
                 if(rINBUF == 8'h05) rOUTBUF <= rState; 
                 if(rINBUF == 8'h04) rState[1] <= 1'b0; 
                 if(rINBUF == 8'h06) rState[1] <= 1'b1; 
@@ -122,17 +133,20 @@ module servant_spi_slave_if
                         case( rCnt[5:3])     
                         3'b010: begin   // CHECK: Needed to use 18-bit addresses
 									rAddress[ADDRESS_WIDTH-1:16] <= rINBUF[1:0];
+                                    if (!accessed) temp_store[8] <= 1'b1;
 									end 
                         3'b011: begin 
 									rAddress[ADDRESS_WIDTH-1:8] <= {rAddress[ADDRESS_WIDTH-1:16], rINBUF}; 
 									rOUTBUF <= 8'h00;    // QUESTION: Is this needed?
 									rReadFlag1 <= 'b1; 
+                                    if (!accessed) temp_store[9] <= 1'b1;
 									end
                         3'b100: begin
 									rAddress[ADDRESS_WIDTH-1:0] <= {rAddress[ADDRESS_WIDTH-1:8], rINBUF} + 1'b1;  // COMMENT: Since this negedge the address is already reed
 									rOUTBUF <= sDqIn;
 									rReadFlag2 <= 'b1;  
-									rReadFlag1<= 'b0; 
+									rReadFlag1<= 'b0;
+                                    if (!accessed) temp_store[10] <= 1'b1; 
                         end  
                         default: begin
                         end
@@ -141,6 +155,8 @@ module servant_spi_slave_if
                     else begin
                         rOUTBUF <= sDqIn;
                         rAddress <= rAddress + 1'b1; 
+                        if (!accessed) temp_store[rAddress[1:0]+10] <= 1'b1;
+                        if (rAddress[1:0]==2'b11) accessed = 1'b1;
                     end
                     end
                 4'h4:begin
@@ -174,7 +190,7 @@ module servant_spi_slave_if
             end 
         end
         else begin
-            rOUTBUF <= {rOUTBUF[6:0],1'b0}; 
+            rOUTBUF <= {rOUTBUF[6:0],1'b0};
         end 
     end
 

@@ -5,9 +5,9 @@ module uart_rx (
     output reg [7:0] data,   // Captured data byte
     output reg valid         // Data valid flag
 );
-    parameter BAUD_TICKS = 28781; // Adjust for your baud rate (e.g., 115200 baud @ 50 MHz)
+    parameter BAUD_TICKS = 29481; // Adjust for your baud rate (e.g., 115200 baud @ 50 MHz)
 
-    //with_spi: 2:28781, 16:168781 without_spi: 878
+    //with_spi: 2:28781/29324, 16:168781 without_spi: 878
     
     reg [31:0] counter;
     reg [3:0] bit_index;
@@ -32,7 +32,7 @@ module uart_rx (
                 counter <= counter + 1;
                 if (counter == BAUD_TICKS/2 && bit_index == 0) begin
                     counter <= 0;
-                    bit_index <= bit_index + 1;
+                    bit_index <= bit_index + 4'h1;
                     if (rx) begin
                         rx_busy <= 0;
                     end
@@ -40,7 +40,7 @@ module uart_rx (
                 else if (counter == BAUD_TICKS - 1) begin
                     counter <= 0;
                     shift_reg <= {rx, shift_reg[9:1]};
-                    bit_index <= bit_index + 1;
+                    bit_index <= bit_index + 4'h1;
                     if (bit_index == 10) begin
                         rx_busy <= 0;
                         data <= shift_reg[8:1];

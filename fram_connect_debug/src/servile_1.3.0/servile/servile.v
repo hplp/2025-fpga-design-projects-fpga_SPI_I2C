@@ -25,7 +25,8 @@ module servile
    input wire		      i_clk,
    input wire		      i_rst,
    input wire		      i_timer_irq,
-	output reg [2:0]                               temp_count,
+	output reg [2:0]    temp_count,
+  output wire         temp_one,
 
    //Memory (WB) interface
    output wire [31:0]	      o_wb_mem_adr,
@@ -276,16 +277,16 @@ module servile
       //MDU
       .o_mdu_valid  (mdu_valid));
 
-
-always @(negedge i_clk or posedge i_rst) begin
-	if (i_rst) begin
-		temp_count <= 4'b0;
-  end else if (wb_ibus_ack && wb_ibus_stb && (wb_ibus_adr < 32'h0)) begin // && (wb_ibus_rdt == 32'h40000537)
-		temp_count <= temp_count + 4'b1;
-	end else begin
-		temp_count <= temp_count;
-	end
-end
+// assign temp_one = (wb_ibus_adr == 32'h0);
+// always @(negedge i_clk or posedge i_rst) begin
+// 	if (i_rst) begin
+// 		temp_count <= 3'b0;
+//   end else if (wb_ibus_ack && wb_ibus_stb && (wb_ibus_rdt == 32'h00000297)) begin // && (wb_ibus_rdt == 32'h40000537)(wb_ibus_adr == 32'h0)
+// 		temp_count <= temp_count + 3'b1;
+// 	end else begin
+// 		temp_count <= temp_count;
+// 	end
+// end
 
 endmodule
 `default_nettype wire

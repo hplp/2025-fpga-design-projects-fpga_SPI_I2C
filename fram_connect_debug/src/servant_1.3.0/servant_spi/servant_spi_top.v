@@ -88,16 +88,19 @@ module servant_spi_top
 
    wire [3:0] temp_count;
    wire [2:0] temp_state;
+   wire [31:0] temp_store;
+   wire temp_one;
+   reg [1:0] temp_two;
 
-   assign led1 = temp_state[0];
-   assign led2 = temp_state[1];
-   assign led3 = temp_state[2];
-   assign led4 = temp_count[0];
-   assign led5 = temp_count[1];
-   assign led6 = temp_count[2];
-  //  assign led5 = wb_mem_we;
-  //  assign led6 = wb_mem_stb;
-   assign led7 = temp_count[3];
+  //  assign led1 = temp_state[0];
+  //  assign led2 = temp_state[1];
+  //  assign led3 = temp_state[2];
+  //  assign led4 = temp_store[0];
+  //  assign led5 = temp_store[1];
+  //  assign led6 = temp_two[0];
+  // //  assign led5 = wb_mem_we;
+  // //  assign led6 = wb_mem_stb;
+  //  assign led7 = temp_two[1];
  
    servant_mux servant_mux
      (
@@ -135,8 +138,8 @@ module servant_spi_top
       .wb_cyc(wb_mem_stb),
       .rd_data(wb_mem_rdt),
       .wb_ack(wb_mem_ack),
-      .configed_out(),
-      .temp_count(temp_count),
+      .configed_out(led1),
+      .temp_count(),
       .temp_state(),
     // SPI Master Interface
       .spi_miso(spi_miso),
@@ -151,7 +154,7 @@ module servant_spi_top
 //      .spi_sck(spi_sck),
 //      .spi_cs(spi_ss),
 //      .spi_mosi(spi_mosi),
-//      .spi_miso(spi_miso), 
+//      .spi_miso(), 
 //    //ram interface  
 //      .sAddress(ram_addr),
 //      .sCSn(),
@@ -159,7 +162,20 @@ module servant_spi_top
 //      .sWRn(ram_we),
 //      .sDqDir(),
 //      .sDqOut(ram_wdata),
-//      .sDqIn(ram_rdata));
+//      .sDqIn(ram_rdata),
+//      .temp_store(temp_store),
+//      .accessed(temp_one),
+//      .temp_cnt(temp_count));
+
+//   always @(negedge wb_clk or posedge wb_rst) begin
+// 	if (wb_rst) begin
+// 		temp_two <= 2'h3;
+//    	end else if (!wb_mem_ack) begin //(rd_data == 32'h00000297)
+// 		temp_two <= temp_count[1:0];
+// 	end else begin
+// 		temp_two <= temp_two;
+// 	end
+// end
 //
 //   
 //   servant_spi_ram
@@ -220,6 +236,7 @@ module servant_spi_top
       .i_rst        (wb_rst),
       .i_timer_irq  (timer_irq),
       .temp_count (temp_state),
+      .temp_one (),
 
       .o_wb_mem_adr   (wb_mem_adr),
       .o_wb_mem_dat   (wb_mem_dat),
