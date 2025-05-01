@@ -55,31 +55,31 @@ void setup(void) {
 
   uint32_t data;   // Store the value
 
-   // blinky.hex
-   fram.writeEnable(true);
-   data = 0x40000537;
-   fram.write(0x0, (uint8_t*)&data, sizeof(data));
-   data = 0x00050513;
-   fram.write(0x4, (uint8_t*)&data, sizeof(data));
-   data = 0x00100337;
-   fram.write(0x8, (uint8_t*)&data, sizeof(data));
-   data = 0x00100293;
-   fram.write(0xc, (uint8_t*)&data, sizeof(data));
-   data = 0x00550023;
-   fram.write(0x10, (uint8_t*)&data, sizeof(data));
-   data = 0x0012C293;
-   fram.write(0x14, (uint8_t*)&data, sizeof(data));
-   data = 0x000073B3;
-   fram.write(0x18, (uint8_t*)&data, sizeof(data));
-   data = 0x00138393;
-   fram.write(0x1c, (uint8_t*)&data, sizeof(data));
-   data = 0xFE731EE3;
-   fram.write(0x20, (uint8_t*)&data, sizeof(data));
-   data = 0xFEDFF06F;
-   fram.write(0x24, (uint8_t*)&data, sizeof(data));
-   data = 0x00000000;
-   fram.write(0x28, (uint8_t*)&data, sizeof(data));
-   fram.writeEnable(false);
+  // blinky.hex
+  //  fram.writeEnable(true);
+  //  data = 0x40000537;
+  //  fram.write(0x0, (uint8_t*)&data, sizeof(data));
+  //  data = 0x00050513;
+  //  fram.write(0x4, (uint8_t*)&data, sizeof(data));
+  //  data = 0x00100337;
+  //  fram.write(0x8, (uint8_t*)&data, sizeof(data));
+  //  data = 0x00100293;
+  //  fram.write(0xc, (uint8_t*)&data, sizeof(data));
+  //  data = 0x00550023;
+  //  fram.write(0x10, (uint8_t*)&data, sizeof(data));
+  //  data = 0x0012C293;
+  //  fram.write(0x14, (uint8_t*)&data, sizeof(data));
+  //  data = 0x000073B3;
+  //  fram.write(0x18, (uint8_t*)&data, sizeof(data));
+  //  data = 0x00138393;
+  //  fram.write(0x1c, (uint8_t*)&data, sizeof(data));
+  //  data = 0xFE731EE3;
+  //  fram.write(0x20, (uint8_t*)&data, sizeof(data));
+  //  data = 0xFEDFF06F;
+  //  fram.write(0x24, (uint8_t*)&data, sizeof(data));
+  //  data = 0x00000000;
+  //  fram.write(0x28, (uint8_t*)&data, sizeof(data));
+  //  fram.writeEnable(false);
 
   // hello_uart.hex
   // fram.writeEnable(true);
@@ -132,6 +132,70 @@ void setup(void) {
   // data = 0x0000000A;
   // fram.write(0x5c, (uint8_t*)&data, sizeof(data));
   // fram.writeEnable(false);
+
+  // test.hex
+  fram.writeEnable(true);
+  data = 0x40000537;
+  fram.write(0x0, (uint8_t*)&data, sizeof(data));
+  data = 0x00100293;
+  fram.write(0x4, (uint8_t*)&data, sizeof(data));
+  data = 0x00550023;
+  fram.write(0x8, (uint8_t*)&data, sizeof(data));
+  data = 0x05900313;
+  fram.write(0xc, (uint8_t*)&data, sizeof(data));
+  data = 0x000073b7;
+  fram.write(0x10, (uint8_t*)&data, sizeof(data));
+  data = 0x36538393;
+  fram.write(0x14, (uint8_t*)&data, sizeof(data));
+  data = 0x00000597;
+  fram.write(0x18, (uint8_t*)&data, sizeof(data));
+  data = 0x04858593;
+  fram.write(0x1c, (uint8_t*)&data, sizeof(data));
+  data = 0x006588a3;
+  fram.write(0x20, (uint8_t*)&data, sizeof(data));
+  data = 0x00759923;
+  fram.write(0x24, (uint8_t*)&data, sizeof(data));
+  data = 0x0005C283;
+  fram.write(0x28, (uint8_t*)&data, sizeof(data));
+  data = 0x02028463;
+  fram.write(0x2c, (uint8_t*)&data, sizeof(data));
+  data = 0x1002E293;
+  fram.write(0x30, (uint8_t*)&data, sizeof(data));
+  data = 0x00129293;
+  fram.write(0x34, (uint8_t*)&data, sizeof(data));
+  data = 0x00550023;
+  fram.write(0x38, (uint8_t*)&data, sizeof(data));
+  data = 0x0012D293;
+  fram.write(0x3c, (uint8_t*)&data, sizeof(data));
+  data = 0x00000013;
+  fram.write(0x40, (uint8_t*)&data, sizeof(data));
+  data = 0x00000013;
+  fram.write(0x44, (uint8_t*)&data, sizeof(data));
+  data = 0xFE0298E3;
+  fram.write(0x48, (uint8_t*)&data, sizeof(data));
+  data = 0x00158593;
+  fram.write(0x4c, (uint8_t*)&data, sizeof(data));
+  data = 0xFD9FF06F;
+  fram.write(0x50, (uint8_t*)&data, sizeof(data));
+  data = 0x900002B7;
+  fram.write(0x54, (uint8_t*)&data, sizeof(data));
+  data = 0x0002A023;
+  fram.write(0x58, (uint8_t*)&data, sizeof(data));
+  data = 0xFF9FF06F;
+  fram.write(0x5c, (uint8_t*)&data, sizeof(data));
+  data = 0x202C6948;
+  fram.write(0x60, (uint8_t*)&data, sizeof(data));
+  data = 0x206D2749;
+  fram.write(0x64, (uint8_t*)&data, sizeof(data));
+  data = 0x76726553;
+  fram.write(0x68, (uint8_t*)&data, sizeof(data));
+  data = 0x21746E61;
+  fram.write(0x6c, (uint8_t*)&data, sizeof(data));
+  data = 0x006F4E0A;
+  fram.write(0x70, (uint8_t*)&data, sizeof(data));
+  data = 0x00000000;
+  fram.write(0x74, (uint8_t*)&data, sizeof(data));
+  fram.writeEnable(false);
 
   // dump the entire 8K of memory!
   uint8_t value;

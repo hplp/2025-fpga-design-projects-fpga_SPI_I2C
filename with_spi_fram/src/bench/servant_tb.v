@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 module servant_tb;
 
-   parameter memfile = "D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/sw/hello_uart.hex";
+   parameter memfile = "D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/with_spi_fram/src/servant_1.3.0/sw/test.hex";
    parameter memsize = 262144;
    parameter width = 1;
    parameter with_csr = 1;
@@ -15,8 +15,8 @@ module servant_tb;
 
    wire q;
 
-   always  #31 wb_clk <= !wb_clk;
-   initial #62 wb_rst <= 1'b1;
+   always  #10 wb_clk <= !wb_clk;
+   initial #10 wb_rst <= 1'b1;
 
 //   vlog_tb_utils vtu();
 

@@ -83,7 +83,7 @@ module serial_out (
     end
 
     // Instantiate JTAG UART
-	serial_out_jtag_uart_0 jtag_uart_0_kavish (
+	serial_out_jtag_uart_0 jtag_uart_0 (
 		.clk            (clk), //               clk.clk
 		.rst_n          (reset_n), //             reset.reset_n
 		.av_chipselect  (av_chipselect), // avalon_jtag_slave.chipselect

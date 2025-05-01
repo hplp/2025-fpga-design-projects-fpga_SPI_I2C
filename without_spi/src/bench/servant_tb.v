@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 module servant_tb;
 
-   parameter memfile = "D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/sw/hello_uart.hex";
+   parameter memfile = "D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/sw/test.hex";
    parameter memsize = 32768;
    parameter width = 1;
    parameter with_csr = 1;

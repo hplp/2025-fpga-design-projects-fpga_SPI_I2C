@@ -278,9 +278,7 @@ end
 always @(posedge clock or posedge reset) begin
     if (reset) begin
         configed <= 1'b0;
-	end else if (wb_ack == 1'b1) begin
-		configed <= 1'b1;
-    end else if (state == TEMP_STATE || (state == FINISH && cmd_reg == 2'b11)) begin
+	end else if (state == TEMP_STATE || (state == FINISH && cmd_reg == 2'b11)) begin
         configed <= 1'b1;
     end else begin
         configed <= configed;

@@ -38,7 +38,7 @@ module spi_mem
  assign spi_ss_l   = spi_ss;
  assign spi_mosi_l = spi_mosi;
  assign spi_miso_l = spi_miso;
- //assign btn_test   = servant_spi_master_if.configed;
+ assign btn_test   = wb_mem_ack;
  assign posedge_btn = wb_btn & ~temp_btn;
 
   always @(posedge wb_clk) begin
@@ -67,7 +67,7 @@ module spi_mem
       .wb_cyc(wb_mem_stb),
       .rd_data(wb_mem_rdt),
       .wb_ack(wb_mem_ack),
-      .configed_out(btn_test),
+      .configed_out(),
     // SPI Master Interface
       .spi_miso(spi_miso),
       .spi_sck(spi_sck),
@@ -184,7 +184,7 @@ module spi_mem
         4: begin
           if (posedge_btn) begin
             state <= 5;
-            wb_mem_adr <= 32'h2e0;
+            wb_mem_adr <= 32'h82e0;
             wb_mem_dat <= 32'h12345678;
             wb_mem_sel <= 4'b0100;
             wb_mem_we  <= 1;
@@ -226,7 +226,7 @@ module spi_mem
         6: begin
           if (posedge_btn) begin
             state <= 7;
-            wb_mem_adr <= 32'h2e0;
+            wb_mem_adr <= 32'h82e0;
             wb_mem_dat <= 32'h0;
             wb_mem_sel <= 4'b1111;
             wb_mem_we  <= 0;
@@ -269,7 +269,7 @@ module spi_mem
         8: begin
           if (posedge_btn) begin
             state <= 9;
-            wb_mem_adr <= 32'h2e0;
+            wb_mem_adr <= 32'h82e0;
             wb_mem_dat <= 32'h12005678;
             wb_mem_sel <= 4'b1111;
             wb_mem_we  <= 1;
@@ -311,7 +311,7 @@ module spi_mem
         10: begin
           if (posedge_btn) begin
             state <= 11;
-            wb_mem_adr <= 32'h2e0;
+            wb_mem_adr <= 32'h82e0;
             wb_mem_dat <= 32'h0;
             wb_mem_sel <= 4'b0010;
             wb_mem_we  <= 0;
