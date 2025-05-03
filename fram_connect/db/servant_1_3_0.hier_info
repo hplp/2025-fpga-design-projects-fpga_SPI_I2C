@@ -348,6 +348,8 @@ clock => spi_out_reg[5].CLK
 clock => spi_out_reg[6].CLK
 clock => spi_out_reg[7].CLK
 clock => serial_clk_delay.CLK
+clock => cmd_reg[0].CLK
+clock => cmd_reg[1].CLK
 reset => configed.ACLR
 reset => bit_cnt[0].ACLR
 reset => bit_cnt[1].ACLR
@@ -371,60 +373,60 @@ reset => clk_cnt[15].ACLR
 reset => serial_clk_delay.PRESET
 reset => serial_clk.PRESET
 reset => state~3.DATAIN
-wr_data[0] => wr_data_reg[0].DATAIN
-wr_data[1] => wr_data_reg[1].DATAIN
-wr_data[2] => wr_data_reg[2].DATAIN
-wr_data[3] => wr_data_reg[3].DATAIN
-wr_data[4] => wr_data_reg[4].DATAIN
-wr_data[5] => wr_data_reg[5].DATAIN
-wr_data[6] => wr_data_reg[6].DATAIN
-wr_data[7] => wr_data_reg[7].DATAIN
-wr_data[8] => wr_data_reg[8].DATAIN
-wr_data[9] => wr_data_reg[9].DATAIN
-wr_data[10] => wr_data_reg[10].DATAIN
-wr_data[11] => wr_data_reg[11].DATAIN
-wr_data[12] => wr_data_reg[12].DATAIN
-wr_data[13] => wr_data_reg[13].DATAIN
-wr_data[14] => wr_data_reg[14].DATAIN
-wr_data[15] => wr_data_reg[15].DATAIN
-wr_data[16] => wr_data_reg[16].DATAIN
-wr_data[17] => wr_data_reg[17].DATAIN
-wr_data[18] => wr_data_reg[18].DATAIN
-wr_data[19] => wr_data_reg[19].DATAIN
-wr_data[20] => wr_data_reg[20].DATAIN
-wr_data[21] => wr_data_reg[21].DATAIN
-wr_data[22] => wr_data_reg[22].DATAIN
-wr_data[23] => wr_data_reg[23].DATAIN
-wr_data[24] => wr_data_reg[24].DATAIN
-wr_data[25] => wr_data_reg[25].DATAIN
-wr_data[26] => wr_data_reg[26].DATAIN
-wr_data[27] => wr_data_reg[27].DATAIN
-wr_data[28] => wr_data_reg[28].DATAIN
-wr_data[29] => wr_data_reg[29].DATAIN
-wr_data[30] => wr_data_reg[30].DATAIN
-wr_data[31] => wr_data_reg[31].DATAIN
-address[2] => address_reg[2].DATAIN
-address[3] => address_reg[3].DATAIN
-address[4] => address_reg[4].DATAIN
-address[5] => address_reg[5].DATAIN
-address[6] => address_reg[6].DATAIN
-address[7] => address_reg[7].DATAIN
-address[8] => address_reg[8].DATAIN
-address[9] => address_reg[9].DATAIN
-address[10] => address_reg[10].DATAIN
-address[11] => address_reg[11].DATAIN
-address[12] => address_reg[12].DATAIN
-address[13] => address_reg[13].DATAIN
-address[14] => address_reg[14].DATAIN
-address[15] => address_reg[15].DATAIN
-address[16] => address_reg[16].DATAIN
-address[17] => address_reg[17].DATAIN
-address[18] => address_reg[18].DATAIN
-address[19] => address_reg[19].DATAIN
-address[20] => address_reg[20].DATAIN
-address[21] => address_reg[21].DATAIN
-address[22] => address_reg[22].DATAIN
-address[23] => address_reg[23].DATAIN
+wr_data[0] => Mux0.IN27
+wr_data[1] => Mux1.IN27
+wr_data[2] => Mux2.IN27
+wr_data[3] => Mux3.IN27
+wr_data[4] => Mux4.IN27
+wr_data[5] => Mux5.IN27
+wr_data[6] => Mux6.IN27
+wr_data[7] => Mux7.IN27
+wr_data[8] => Mux0.IN19
+wr_data[9] => Mux1.IN19
+wr_data[10] => Mux2.IN19
+wr_data[11] => Mux3.IN19
+wr_data[12] => Mux4.IN19
+wr_data[13] => Mux5.IN19
+wr_data[14] => Mux6.IN19
+wr_data[15] => Mux7.IN19
+wr_data[16] => Mux0.IN11
+wr_data[17] => Mux1.IN11
+wr_data[18] => Mux2.IN11
+wr_data[19] => Mux3.IN11
+wr_data[20] => Mux4.IN11
+wr_data[21] => Mux5.IN11
+wr_data[22] => Mux6.IN11
+wr_data[23] => Mux7.IN11
+wr_data[24] => Mux0.IN3
+wr_data[25] => Mux1.IN3
+wr_data[26] => Mux2.IN3
+wr_data[27] => Mux3.IN3
+wr_data[28] => Mux4.IN3
+wr_data[29] => Mux5.IN3
+wr_data[30] => Mux6.IN3
+wr_data[31] => Mux7.IN3
+address[2] => Selector9.IN5
+address[3] => Selector8.IN5
+address[4] => Selector7.IN5
+address[5] => Selector6.IN5
+address[6] => Selector5.IN5
+address[7] => Selector4.IN5
+address[8] => Selector11.IN4
+address[9] => Selector10.IN4
+address[10] => Selector9.IN4
+address[11] => Selector8.IN4
+address[12] => Selector7.IN4
+address[13] => Selector6.IN4
+address[14] => Selector5.IN4
+address[15] => Selector4.IN4
+address[16] => Selector11.IN3
+address[17] => Selector10.IN3
+address[18] => Selector9.IN3
+address[19] => Selector8.IN3
+address[20] => Selector7.IN3
+address[21] => Selector6.IN3
+address[22] => Selector5.IN3
+address[23] => Selector4.IN3
 wb_sel[0] => sel_dec_start[1].OUTPUTSELECT
 wb_sel[0] => sel_dec_start[0].OUTPUTSELECT
 wb_sel[0] => Equal8.IN3
@@ -445,9 +447,9 @@ wb_sel[3] => sel_dec_start.DATAA
 wb_sel[3] => Equal8.IN0
 wb_we => spi_out_reg.OUTPUTSELECT
 wb_we => spi_out_reg.OUTPUTSELECT
-wb_we => always9.IN1
-wb_we => cmd_reg[0].DATAIN
+wb_we => always10.IN1
 wb_we => Selector11.IN0
+wb_we => cmd_reg[0].DATAIN
 wb_cyc => always0.IN1
 wb_cyc => always2.IN1
 wb_cyc => state.DATAB
@@ -485,14 +487,14 @@ rd_data[28] <= rd_data_reg[28].DB_MAX_OUTPUT_PORT_TYPE
 rd_data[29] <= rd_data_reg[29].DB_MAX_OUTPUT_PORT_TYPE
 rd_data[30] <= rd_data_reg[30].DB_MAX_OUTPUT_PORT_TYPE
 rd_data[31] <= rd_data_reg[31].DB_MAX_OUTPUT_PORT_TYPE
-wb_ack <= wb_ack$latch.DB_MAX_OUTPUT_PORT_TYPE
+wb_ack <= wb_ack.DB_MAX_OUTPUT_PORT_TYPE
 spi_miso => rd_data_reg.DATAB
 spi_miso => Selector21.IN3
 spi_miso => Selector29.IN3
 spi_miso => Selector37.IN3
 spi_miso => spi_in_reg[0].DATAIN
 spi_sck <= serial_clk.DB_MAX_OUTPUT_PORT_TYPE
-spi_ss <= spi_ss$latch.DB_MAX_OUTPUT_PORT_TYPE
+spi_ss <= WideNor2.DB_MAX_OUTPUT_PORT_TYPE
 spi_mosi <= spi_out_reg[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -3199,6 +3201,14 @@ clk => counter[28].CLK
 clk => counter[29].CLK
 clk => counter[30].CLK
 clk => counter[31].CLK
+reset_n => data[0]~reg0.ACLR
+reset_n => data[1]~reg0.ACLR
+reset_n => data[2]~reg0.ACLR
+reset_n => data[3]~reg0.ACLR
+reset_n => data[4]~reg0.ACLR
+reset_n => data[5]~reg0.ACLR
+reset_n => data[6]~reg0.ACLR
+reset_n => data[7]~reg0.ACLR
 reset_n => valid~reg0.ACLR
 reset_n => shift_reg[1].ACLR
 reset_n => shift_reg[2].ACLR
@@ -3246,15 +3256,6 @@ reset_n => counter[28].ACLR
 reset_n => counter[29].ACLR
 reset_n => counter[30].ACLR
 reset_n => counter[31].ACLR
-reset_n => data[0]~reg0.ENA
-reset_n => data[7]~reg0.ENA
-reset_n => data[6]~reg0.ENA
-reset_n => data[5]~reg0.ENA
-reset_n => data[4]~reg0.ENA
-reset_n => data[3]~reg0.ENA
-reset_n => data[2]~reg0.ENA
-reset_n => data[1]~reg0.ENA
-rx => rx_busy.OUTPUTSELECT
 rx => shift_reg.DATAB
 rx => always0.IN1
 data[0] <= data[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -3268,7 +3269,7 @@ data[7] <= data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valid <= valid~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0
 av_address => ien_AF.OUTPUTSELECT
 av_address => ien_AE.OUTPUTSELECT
 av_address => ac.OUTPUTSELECT
@@ -3358,7 +3359,7 @@ dataavailable <= dataavailable~reg0.DB_MAX_OUTPUT_PORT_TYPE
 readyfordata <= readyfordata~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w
 clk => clk.IN1
 fifo_clear => fifo_clear.IN1
 fifo_wdata[0] => fifo_wdata[0].IN1
@@ -3389,7 +3390,7 @@ wfifo_used[4] <= scfifo:wfifo.usedw
 wfifo_used[5] <= scfifo:wfifo.usedw
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo
 data[0] => scfifo_jr21:auto_generated.data[0]
 data[1] => scfifo_jr21:auto_generated.data[1]
 data[2] => scfifo_jr21:auto_generated.data[2]
@@ -3425,7 +3426,7 @@ usedw[4] <= scfifo_jr21:auto_generated.usedw[4]
 usedw[5] <= scfifo_jr21:auto_generated.usedw[5]
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated
 aclr => a_dpfifo_l011:dpfifo.aclr
 clock => a_dpfifo_l011:dpfifo.clock
 data[0] => a_dpfifo_l011:dpfifo.data[0]
@@ -3456,7 +3457,7 @@ usedw[5] <= a_dpfifo_l011:dpfifo.usedw[5]
 wrreq => a_dpfifo_l011:dpfifo.wreq
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo
 aclr => a_fefifo_7cf:fifo_state.aclr
 aclr => cntr_1ob:rd_ptr_count.aclr
 aclr => cntr_1ob:wr_ptr.aclr
@@ -3502,7 +3503,7 @@ wreq => altsyncram_nio1:FIFOram.wren_a
 wreq => cntr_1ob:wr_ptr.cnt_en
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|a_fefifo_7cf:fifo_state
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|a_fefifo_7cf:fifo_state
 aclr => b_full.IN0
 aclr => b_non_empty.IN0
 aclr => cntr_do7:count_usedw.aclr
@@ -3534,7 +3535,7 @@ wreq => _.IN0
 wreq => cntr_do7:count_usedw.updown
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -3560,7 +3561,7 @@ updown => counter_comb_bita4.DATAB
 updown => counter_comb_bita5.DATAB
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -3715,7 +3716,7 @@ wren_a => ram_block1a7.PORTAWE
 wren_a => ram_block1a7.ENA0
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|cntr_1ob:rd_ptr_count
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|cntr_1ob:rd_ptr_count
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -3735,7 +3736,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|cntr_1ob:wr_ptr
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|cntr_1ob:wr_ptr
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -3755,7 +3756,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r
 clk => clk.IN1
 fifo_clear => fifo_clear.IN1
 fifo_rd => fifo_rd.IN1
@@ -3787,7 +3788,7 @@ rfifo_used[4] <= scfifo:rfifo.usedw
 rfifo_used[5] <= scfifo:rfifo.usedw
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo
 data[0] => scfifo_jr21:auto_generated.data[0]
 data[1] => scfifo_jr21:auto_generated.data[1]
 data[2] => scfifo_jr21:auto_generated.data[2]
@@ -3823,7 +3824,7 @@ usedw[4] <= scfifo_jr21:auto_generated.usedw[4]
 usedw[5] <= scfifo_jr21:auto_generated.usedw[5]
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated
 aclr => a_dpfifo_l011:dpfifo.aclr
 clock => a_dpfifo_l011:dpfifo.clock
 data[0] => a_dpfifo_l011:dpfifo.data[0]
@@ -3854,7 +3855,7 @@ usedw[5] <= a_dpfifo_l011:dpfifo.usedw[5]
 wrreq => a_dpfifo_l011:dpfifo.wreq
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo
 aclr => a_fefifo_7cf:fifo_state.aclr
 aclr => cntr_1ob:rd_ptr_count.aclr
 aclr => cntr_1ob:wr_ptr.aclr
@@ -3900,7 +3901,7 @@ wreq => altsyncram_nio1:FIFOram.wren_a
 wreq => cntr_1ob:wr_ptr.cnt_en
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|a_fefifo_7cf:fifo_state
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|a_fefifo_7cf:fifo_state
 aclr => b_full.IN0
 aclr => b_non_empty.IN0
 aclr => cntr_do7:count_usedw.aclr
@@ -3932,7 +3933,7 @@ wreq => _.IN0
 wreq => cntr_do7:count_usedw.updown
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -3958,7 +3959,7 @@ updown => counter_comb_bita4.DATAB
 updown => counter_comb_bita5.DATAB
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -4113,7 +4114,7 @@ wren_a => ram_block1a7.PORTAWE
 wren_a => ram_block1a7.ENA0
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|cntr_1ob:rd_ptr_count
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|cntr_1ob:rd_ptr_count
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -4133,7 +4134,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|cntr_1ob:wr_ptr
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|cntr_1ob:wr_ptr
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -4153,7 +4154,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic
 raw_tck => raw_tck.IN1
 tdi => tdi.IN1
 jtag_state_rti => ~NO_FANOUT~
@@ -4232,7 +4233,7 @@ t_dat[7] <= t_dat[7].DB_MAX_OUTPUT_PORT_TYPE
 t_pause <= t_pause~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|sld_jtag_endpoint_adapter:inst
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|sld_jtag_endpoint_adapter:inst
 raw_tck => sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst.raw_tck
 raw_tms => sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst.raw_tms
 tdi => sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst.tdi
@@ -4287,7 +4288,7 @@ adapted_tdo => sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_ins
 adapted_ir_out[0] => sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst.adapted_ir_out[0]
 
 
-|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|sld_jtag_endpoint_adapter:inst|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst
+|servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|sld_jtag_endpoint_adapter:inst|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst
 raw_tck => adapted_tck.DATAIN
 raw_tms => adapted_tms.DATAIN
 tdi => adapted_tdi.DATAIN

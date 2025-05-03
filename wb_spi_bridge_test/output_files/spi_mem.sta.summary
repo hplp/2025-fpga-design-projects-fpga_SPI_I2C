@@ -2,148 +2,100 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : -5.726
-TNS   : -218.947
-
-Type  : Slow 1200mV 85C Model Setup 'servant_spi_master_if:spi_master_if|state.TRANSMIT_COMMAND'
-Slack : -2.641
-TNS   : -20.715
+Type  : Slow 1200mV 85C Model Setup 'i_clk'
+Slack : -3.266
+TNS   : -146.749
 
 Type  : Slow 1200mV 85C Model Setup 'servant_spi_master_if:spi_master_if|serial_clk'
-Slack : -1.789
-TNS   : -64.134
-
-Type  : Slow 1200mV 85C Model Hold 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : -0.216
-TNS   : -0.216
-
-Type  : Slow 1200mV 85C Model Hold 'servant_spi_master_if:spi_master_if|state.TRANSMIT_COMMAND'
-Slack : -0.049
-TNS   : -0.049
+Slack : -1.533
+TNS   : -50.997
 
 Type  : Slow 1200mV 85C Model Hold 'servant_spi_master_if:spi_master_if|serial_clk'
-Slack : 0.010
+Slack : 0.017
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : 309.664
+Type  : Slow 1200mV 85C Model Hold 'i_clk'
+Slack : 0.343
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Removal 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : 1.399
+Type  : Slow 1200mV 85C Model Recovery 'i_clk'
+Slack : -1.176
+TNS   : -26.220
+
+Type  : Slow 1200mV 85C Model Removal 'i_clk'
+Slack : 1.155
 TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'i_clk'
+Slack : -3.000
+TNS   : -91.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'servant_spi_master_if:spi_master_if|serial_clk'
 Slack : -1.000
 TNS   : -41.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'servant_spi_master_if:spi_master_if|state.TRANSMIT_COMMAND'
-Slack : 0.412
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'i_clk'
-Slack : 9.835
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : 312.245
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : -5.003
-TNS   : -187.870
-
-Type  : Slow 1200mV 0C Model Setup 'servant_spi_master_if:spi_master_if|state.TRANSMIT_COMMAND'
-Slack : -2.479
-TNS   : -19.372
+Type  : Slow 1200mV 0C Model Setup 'i_clk'
+Slack : -2.866
+TNS   : -126.741
 
 Type  : Slow 1200mV 0C Model Setup 'servant_spi_master_if:spi_master_if|serial_clk'
-Slack : -1.552
-TNS   : -55.979
-
-Type  : Slow 1200mV 0C Model Hold 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : -0.273
-TNS   : -0.274
-
-Type  : Slow 1200mV 0C Model Hold 'servant_spi_master_if:spi_master_if|state.TRANSMIT_COMMAND'
-Slack : -0.019
-TNS   : -0.019
+Slack : -1.391
+TNS   : -46.235
 
 Type  : Slow 1200mV 0C Model Hold 'servant_spi_master_if:spi_master_if|serial_clk'
-Slack : 0.039
+Slack : 0.069
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : 309.925
+Type  : Slow 1200mV 0C Model Hold 'i_clk'
+Slack : 0.298
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Removal 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : 1.280
+Type  : Slow 1200mV 0C Model Recovery 'i_clk'
+Slack : -0.935
+TNS   : -20.266
+
+Type  : Slow 1200mV 0C Model Removal 'i_clk'
+Slack : 1.063
 TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'i_clk'
+Slack : -3.000
+TNS   : -91.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'servant_spi_master_if:spi_master_if|serial_clk'
 Slack : -1.000
 TNS   : -41.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'servant_spi_master_if:spi_master_if|state.TRANSMIT_COMMAND'
-Slack : 0.446
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'i_clk'
-Slack : 9.818
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : 312.242
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : -3.233
-TNS   : -119.291
-
-Type  : Fast 1200mV 0C Model Setup 'servant_spi_master_if:spi_master_if|state.TRANSMIT_COMMAND'
-Slack : -1.228
-TNS   : -9.469
+Type  : Fast 1200mV 0C Model Setup 'i_clk'
+Slack : -1.730
+TNS   : -56.656
 
 Type  : Fast 1200mV 0C Model Setup 'servant_spi_master_if:spi_master_if|serial_clk'
-Slack : -0.593
-TNS   : -20.920
+Slack : -0.513
+TNS   : -15.027
 
-Type  : Fast 1200mV 0C Model Hold 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : -0.121
-TNS   : -0.121
+Type  : Fast 1200mV 0C Model Hold 'i_clk'
+Slack : 0.102
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'servant_spi_master_if:spi_master_if|serial_clk'
-Slack : -0.019
-TNS   : -0.019
-
-Type  : Fast 1200mV 0C Model Hold 'servant_spi_master_if:spi_master_if|state.TRANSMIT_COMMAND'
-Slack : 0.043
+Slack : 0.136
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : 310.822
+Type  : Fast 1200mV 0C Model Recovery 'i_clk'
+Slack : -0.272
+TNS   : -2.565
+
+Type  : Fast 1200mV 0C Model Removal 'i_clk'
+Slack : 0.596
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Removal 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : 0.767
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'i_clk'
+Slack : -3.000
+TNS   : -96.754
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'servant_spi_master_if:spi_master_if|serial_clk'
 Slack : -1.000
 TNS   : -41.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'servant_spi_master_if:spi_master_if|state.TRANSMIT_COMMAND'
-Slack : 0.314
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'i_clk'
-Slack : 9.587
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_gen|pll|auto_generated|pll1|clk[0]'
-Slack : 312.273
-TNS   : 0.000
 
 ------------------------------------------------------------

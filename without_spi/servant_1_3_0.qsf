@@ -43,7 +43,7 @@ set_global_assignment -name TOP_LEVEL_ENTITY servive
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 23.1STD.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:14:27  NOVEMBER 21, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
-set_parameter -name memfile ./src/servant_1.3.0/sw/blinky.hex
+set_parameter -name memfile ./src/servant_1.3.0/sw/test.hex
 set_parameter -name memsize 32768
 set_location_assignment PIN_R8 -to i_clk
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_clk

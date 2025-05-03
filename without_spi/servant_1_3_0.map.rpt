@@ -1,5 +1,5 @@
 Analysis & Synthesis report for servant_1_3_0
-Mon Apr 14 07:09:10 2025
+Thu May 01 16:33:54 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -25,7 +25,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  17. Multiplexer Restructuring Statistics (Restructuring Performed)
  18. Source assignments for serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram
  19. Source assignments for serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram
- 20. Source assignments for servant:servant|servant_ram:ram|altsyncram:mem_rtl_0|altsyncram_dmg1:auto_generated
+ 20. Source assignments for servant:servant|servant_ram:ram|altsyncram:mem_rtl_0|altsyncram_mkg1:auto_generated
  21. Source assignments for servant:servant|serv_rf_ram:rf_ram|altsyncram:memory_rtl_0|altsyncram_qvg1:auto_generated
  22. Parameter Settings for User Entity Instance: Top-level Entity: |servive
  23. Parameter Settings for User Entity Instance: servive_clock_gen:clock_gen|altpll:pll
@@ -89,13 +89,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 14 07:09:10 2025       ;
+; Analysis & Synthesis Status        ; Successful - Thu May 01 16:33:54 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; servant_1_3_0                               ;
 ; Top-level Entity Name              ; servive                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 857                                         ;
-;     Total combinational functions  ; 747                                         ;
+; Total logic elements               ; 856                                         ;
+;     Total combinational functions  ; 755                                         ;
 ;     Dedicated logic registers      ; 483                                         ;
 ; Total registers                    ; 483                                         ;
 ; Total pins                         ; 4                                           ;
@@ -197,7 +197,7 @@ https://fpgasoftware.intel.com/eula.
 +------+------------------------------------------+
 ; Name ; Setting                                  ;
 +------+------------------------------------------+
-;      ; ./src/servant_1.3.0/sw/blinky.hex        ;
+;      ; ./src/servant_1.3.0/sw/test.hex          ;
 ;      ; 32768                                    ;
 +------+------------------------------------------+
 
@@ -215,85 +215,86 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                          ;
-+--------------------------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                       ; Library     ;
-+--------------------------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+-------------+
-; ../serial_out/synthesis/submodules/uart_rx.v                       ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/uart_rx.v                                      ;             ;
-; ../serial_out/synthesis/submodules/serial_out_jtag_uart_0.v        ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v                       ;             ;
-; ../serial_out/synthesis/serial_out.v                               ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v                                              ;             ;
-; src/serv_1.3.0/rtl/serv_bufreg.v                                   ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_bufreg.v                                   ;             ;
-; src/serv_1.3.0/rtl/serv_bufreg2.v                                  ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_bufreg2.v                                  ;             ;
-; src/serv_1.3.0/rtl/serv_alu.v                                      ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_alu.v                                      ;             ;
-; src/serv_1.3.0/rtl/serv_csr.v                                      ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_csr.v                                      ;             ;
-; src/serv_1.3.0/rtl/serv_ctrl.v                                     ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_ctrl.v                                     ;             ;
-; src/serv_1.3.0/rtl/serv_decode.v                                   ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_decode.v                                   ;             ;
-; src/serv_1.3.0/rtl/serv_immdec.v                                   ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_immdec.v                                   ;             ;
-; src/serv_1.3.0/rtl/serv_mem_if.v                                   ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_mem_if.v                                   ;             ;
-; src/serv_1.3.0/rtl/serv_rf_if.v                                    ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_if.v                                    ;             ;
-; src/serv_1.3.0/rtl/serv_rf_ram_if.v                                ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_ram_if.v                                ;             ;
-; src/serv_1.3.0/rtl/serv_rf_ram.v                                   ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_ram.v                                   ;             ;
-; src/serv_1.3.0/rtl/serv_state.v                                    ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_state.v                                    ;             ;
-; src/serv_1.3.0/rtl/serv_top.v                                      ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v                                      ;             ;
-; src/servile_1.3.0/servile/servile_mux.v                            ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile_mux.v                            ;             ;
-; src/servile_1.3.0/servile/servile_arbiter.v                        ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile_arbiter.v                        ;             ;
-; src/servile_1.3.0/servile/servile.v                                ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile.v                                ;             ;
-; src/servant_1.3.0/servant/servant_timer.v                          ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_timer.v                          ;             ;
-; src/servant_1.3.0/servant/servant_gpio.v                           ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_gpio.v                           ;             ;
-; src/servant_1.3.0/servant/servant_mux.v                            ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_mux.v                            ;             ;
-; src/servant_1.3.0/servant/servant_ram_quartus.sv                   ; yes             ; User SystemVerilog HDL File                           ; D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_ram_quartus.sv                   ;             ;
-; src/servant_1.3.0/servant/servant.v                                ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant.v                                ;             ;
-; src/servant_1.3.0/servant/servive_clock_gen.v                      ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v                      ;             ;
-; src/servant_1.3.0/servant/servive.v                                ; yes             ; User Verilog HDL File                                 ; D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive.v                                ;             ;
-; altpll.tdf                                                         ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf                                         ;             ;
-; aglobal201.inc                                                     ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                     ;             ;
-; stratix_pll.inc                                                    ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc                                    ;             ;
-; stratixii_pll.inc                                                  ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc                                  ;             ;
-; cycloneii_pll.inc                                                  ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc                                  ;             ;
-; db/altpll_85l.tdf                                                  ; yes             ; Auto-Generated Megafunction                           ; D:/serv_project/build/servant_1.3.0/without_spi/db/altpll_85l.tdf                                                  ;             ;
-; scfifo.tdf                                                         ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf                                         ;             ;
-; a_regfifo.inc                                                      ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_regfifo.inc                                      ;             ;
-; a_dpfifo.inc                                                       ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_dpfifo.inc                                       ;             ;
-; a_i2fifo.inc                                                       ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_i2fifo.inc                                       ;             ;
-; a_fffifo.inc                                                       ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_fffifo.inc                                       ;             ;
-; a_f2fifo.inc                                                       ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_f2fifo.inc                                       ;             ;
-; db/scfifo_jr21.tdf                                                 ; yes             ; Auto-Generated Megafunction                           ; D:/serv_project/build/servant_1.3.0/without_spi/db/scfifo_jr21.tdf                                                 ;             ;
-; db/a_dpfifo_l011.tdf                                               ; yes             ; Auto-Generated Megafunction                           ; D:/serv_project/build/servant_1.3.0/without_spi/db/a_dpfifo_l011.tdf                                               ;             ;
-; db/a_fefifo_7cf.tdf                                                ; yes             ; Auto-Generated Megafunction                           ; D:/serv_project/build/servant_1.3.0/without_spi/db/a_fefifo_7cf.tdf                                                ;             ;
-; db/cntr_do7.tdf                                                    ; yes             ; Auto-Generated Megafunction                           ; D:/serv_project/build/servant_1.3.0/without_spi/db/cntr_do7.tdf                                                    ;             ;
-; db/altsyncram_nio1.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_nio1.tdf                                             ;             ;
-; db/cntr_1ob.tdf                                                    ; yes             ; Auto-Generated Megafunction                           ; D:/serv_project/build/servant_1.3.0/without_spi/db/cntr_1ob.tdf                                                    ;             ;
-; alt_jtag_atlantic.v                                                ; yes             ; Encrypted Megafunction                                ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_jtag_atlantic.v                                ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                                ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                      ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                                ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                  ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                                ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd                                        ; altera_sld  ;
-; db/ip/sld96f8cc7d/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File                 ; D:/serv_project/build/servant_1.3.0/without_spi/db/ip/sld96f8cc7d/alt_sld_fab.v                                    ; alt_sld_fab ;
-; db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File                 ; D:/serv_project/build/servant_1.3.0/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
-; db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File                     ; D:/serv_project/build/servant_1.3.0/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File           ; D:/serv_project/build/servant_1.3.0/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File                        ; D:/serv_project/build/servant_1.3.0/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File           ; D:/serv_project/build/servant_1.3.0/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                                ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                   ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                                ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                     ;             ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                     ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                              ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                        ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                     ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                      ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                         ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                         ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                       ;             ;
-; db/altsyncram_dmg1.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_dmg1.tdf                                             ;             ;
-; db/servant_1_3_0.ram0_servant_ram_db6d529d.hdl.mif                 ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; D:/serv_project/build/servant_1.3.0/without_spi/db/servant_1_3_0.ram0_servant_ram_db6d529d.hdl.mif                 ;             ;
-; db/altsyncram_qvg1.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_qvg1.tdf                                             ;             ;
-; db/altsyncram_nng1.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_nng1.tdf                                             ;             ;
-; db/servant_1_3_0.ram0_servant_ram_8ecaf51a.hdl.mif                 ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; D:/serv_project/build/servant_1.3.0/without_spi/db/servant_1_3_0.ram0_servant_ram_8ecaf51a.hdl.mif                 ;             ;
-+--------------------------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+-------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                       ;
++--------------------------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                    ; Library     ;
++--------------------------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-------------+
+; ../serial_out/synthesis/submodules/uart_rx.v                       ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/uart_rx.v                                      ;             ;
+; ../serial_out/synthesis/submodules/serial_out_jtag_uart_0.v        ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v                       ;             ;
+; ../serial_out/synthesis/serial_out.v                               ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/serial_out.v                                              ;             ;
+; src/serv_1.3.0/rtl/serv_bufreg.v                                   ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_bufreg.v                                   ;             ;
+; src/serv_1.3.0/rtl/serv_bufreg2.v                                  ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_bufreg2.v                                  ;             ;
+; src/serv_1.3.0/rtl/serv_alu.v                                      ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_alu.v                                      ;             ;
+; src/serv_1.3.0/rtl/serv_csr.v                                      ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_csr.v                                      ;             ;
+; src/serv_1.3.0/rtl/serv_ctrl.v                                     ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_ctrl.v                                     ;             ;
+; src/serv_1.3.0/rtl/serv_decode.v                                   ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_decode.v                                   ;             ;
+; src/serv_1.3.0/rtl/serv_immdec.v                                   ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_immdec.v                                   ;             ;
+; src/serv_1.3.0/rtl/serv_mem_if.v                                   ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_mem_if.v                                   ;             ;
+; src/serv_1.3.0/rtl/serv_rf_if.v                                    ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_rf_if.v                                    ;             ;
+; src/serv_1.3.0/rtl/serv_rf_ram_if.v                                ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_rf_ram_if.v                                ;             ;
+; src/serv_1.3.0/rtl/serv_rf_ram.v                                   ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_rf_ram.v                                   ;             ;
+; src/serv_1.3.0/rtl/serv_state.v                                    ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_state.v                                    ;             ;
+; src/serv_1.3.0/rtl/serv_top.v                                      ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_top.v                                      ;             ;
+; src/servile_1.3.0/servile/servile_mux.v                            ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servile_1.3.0/servile/servile_mux.v                            ;             ;
+; src/servile_1.3.0/servile/servile_arbiter.v                        ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servile_1.3.0/servile/servile_arbiter.v                        ;             ;
+; src/servile_1.3.0/servile/servile.v                                ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servile_1.3.0/servile/servile.v                                ;             ;
+; src/servant_1.3.0/servant/servant_timer.v                          ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant_timer.v                          ;             ;
+; src/servant_1.3.0/servant/servant_gpio.v                           ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant_gpio.v                           ;             ;
+; src/servant_1.3.0/servant/servant_mux.v                            ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant_mux.v                            ;             ;
+; src/servant_1.3.0/servant/servant_ram_quartus.sv                   ; yes             ; User SystemVerilog HDL File                           ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant_ram_quartus.sv                   ;             ;
+; src/servant_1.3.0/servant/servant.v                                ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant.v                                ;             ;
+; src/servant_1.3.0/servant/servive_clock_gen.v                      ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v                      ;             ;
+; src/servant_1.3.0/servant/servive.v                                ; yes             ; User Verilog HDL File                                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servive.v                                ;             ;
+; altpll.tdf                                                         ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf                                                      ;             ;
+; aglobal201.inc                                                     ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                  ;             ;
+; stratix_pll.inc                                                    ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc                                                 ;             ;
+; stratixii_pll.inc                                                  ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc                                               ;             ;
+; cycloneii_pll.inc                                                  ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc                                               ;             ;
+; db/altpll_85l.tdf                                                  ; yes             ; Auto-Generated Megafunction                           ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altpll_85l.tdf                                                  ;             ;
+; scfifo.tdf                                                         ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf                                                      ;             ;
+; a_regfifo.inc                                                      ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_regfifo.inc                                                   ;             ;
+; a_dpfifo.inc                                                       ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_dpfifo.inc                                                    ;             ;
+; a_i2fifo.inc                                                       ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_i2fifo.inc                                                    ;             ;
+; a_fffifo.inc                                                       ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_fffifo.inc                                                    ;             ;
+; a_f2fifo.inc                                                       ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_f2fifo.inc                                                    ;             ;
+; db/scfifo_jr21.tdf                                                 ; yes             ; Auto-Generated Megafunction                           ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/scfifo_jr21.tdf                                                 ;             ;
+; db/a_dpfifo_l011.tdf                                               ; yes             ; Auto-Generated Megafunction                           ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/a_dpfifo_l011.tdf                                               ;             ;
+; db/a_fefifo_7cf.tdf                                                ; yes             ; Auto-Generated Megafunction                           ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/a_fefifo_7cf.tdf                                                ;             ;
+; db/cntr_do7.tdf                                                    ; yes             ; Auto-Generated Megafunction                           ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/cntr_do7.tdf                                                    ;             ;
+; db/altsyncram_nio1.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_nio1.tdf                                             ;             ;
+; db/cntr_1ob.tdf                                                    ; yes             ; Auto-Generated Megafunction                           ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/cntr_1ob.tdf                                                    ;             ;
+; alt_jtag_atlantic.v                                                ; yes             ; Encrypted Megafunction                                ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_jtag_atlantic.v                                             ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                                ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                   ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                                ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                               ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                                ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd                                                     ; altera_sld  ;
+; db/ip/sld96f8cc7d/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/ip/sld96f8cc7d/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File                 ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File                     ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File           ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File                        ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File           ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                                ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                                ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                  ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                  ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                           ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                     ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                  ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                   ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                      ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                      ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                          ; d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                    ;             ;
+; db/altsyncram_mkg1.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_mkg1.tdf                                             ;             ;
+; db/servant_1_3_0.ram0_servant_ram_b25c1f73.hdl.mif                 ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/servant_1_3_0.ram0_servant_ram_b25c1f73.hdl.mif                 ;             ;
+; db/altsyncram_qvg1.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_qvg1.tdf                                             ;             ;
+; db/altsyncram_nng1.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_nng1.tdf                                             ;             ;
+; db/servant_1_3_0.ram0_servant_ram_8ecaf51a.hdl.mif                 ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/servant_1_3_0.ram0_servant_ram_8ecaf51a.hdl.mif                 ;             ;
++--------------------------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
@@ -301,16 +302,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                   ;
 +---------------------------------------------+-------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 857                                                                     ;
+; Estimated Total logic elements              ; 856                                                                     ;
 ;                                             ;                                                                         ;
-; Total combinational functions               ; 747                                                                     ;
+; Total combinational functions               ; 755                                                                     ;
 ; Logic element usage by number of LUT inputs ;                                                                         ;
-;     -- 4 input functions                    ; 329                                                                     ;
-;     -- 3 input functions                    ; 173                                                                     ;
-;     -- <=2 input functions                  ; 245                                                                     ;
+;     -- 4 input functions                    ; 331                                                                     ;
+;     -- 3 input functions                    ; 174                                                                     ;
+;     -- <=2 input functions                  ; 250                                                                     ;
 ;                                             ;                                                                         ;
 ; Logic elements by mode                      ;                                                                         ;
-;     -- normal mode                          ; 617                                                                     ;
+;     -- normal mode                          ; 625                                                                     ;
 ;     -- arithmetic mode                      ; 130                                                                     ;
 ;                                             ;                                                                         ;
 ; Total registers                             ; 483                                                                     ;
@@ -327,8 +328,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                         ;
 ; Maximum fan-out node                        ; servive_clock_gen:clock_gen|altpll:pll|altpll_85l:auto_generated|clk[0] ;
 ; Maximum fan-out                             ; 308                                                                     ;
-; Total fan-out                               ; 4595                                                                    ;
-; Average fan-out                             ; 3.56                                                                    ;
+; Total fan-out                               ; 4594                                                                    ;
+; Average fan-out                             ; 3.54                                                                    ;
 +---------------------------------------------+-------------------------------------------------------------------------+
 
 
@@ -337,8 +338,8 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                 ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |servive                                                                                                                                ; 747 (1)             ; 483 (0)                   ; 263808      ; 0            ; 0       ; 0         ; 4    ; 0            ; |servive                                                                                                                                                                                                                                                                                                                                            ; servive                           ; work         ;
-;    |serial_out:serial_out|                                                                                                              ; 153 (1)             ; 145 (9)                   ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|serial_out:serial_out                                                                                                                                                                                                                                                                                                                      ; serial_out                        ; work         ;
+; |servive                                                                                                                                ; 755 (1)             ; 483 (0)                   ; 263808      ; 0            ; 0       ; 0         ; 4    ; 0            ; |servive                                                                                                                                                                                                                                                                                                                                            ; servive                           ; work         ;
+;    |serial_out:serial_out|                                                                                                              ; 161 (1)             ; 145 (9)                   ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|serial_out:serial_out                                                                                                                                                                                                                                                                                                                      ; serial_out                        ; work         ;
 ;       |serial_out_jtag_uart_0:jtag_uart_0_kavish|                                                                                       ; 87 (4)              ; 81 (5)                    ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish                                                                                                                                                                                                                                                                            ; serial_out_jtag_uart_0            ; work         ;
 ;          |alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|                                                                   ; 47 (47)             ; 48 (48)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic                                                                                                                                                                                                                 ; alt_jtag_atlantic                 ; work         ;
 ;          |serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|                                                          ; 11 (0)              ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r                                                                                                                                                                                                        ; serial_out_jtag_uart_0_scfifo_r   ; work         ;
@@ -356,7 +357,7 @@ https://fpgasoftware.intel.com/eula.
 ;                      |altsyncram_nio1:FIFOram|                                                                                          ; 0 (0)               ; 0 (0)                     ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram                                                                                                                   ; altsyncram_nio1                   ; work         ;
 ;                      |cntr_1ob:rd_ptr_count|                                                                                            ; 6 (6)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|cntr_1ob:rd_ptr_count                                                                                                                     ; cntr_1ob                          ; work         ;
 ;                      |cntr_1ob:wr_ptr|                                                                                                  ; 6 (6)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|cntr_1ob:wr_ptr                                                                                                                           ; cntr_1ob                          ; work         ;
-;       |uart_rx:uart_rx_inst|                                                                                                            ; 65 (65)             ; 55 (55)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|serial_out:serial_out|uart_rx:uart_rx_inst                                                                                                                                                                                                                                                                                                 ; uart_rx                           ; work         ;
+;       |uart_rx:uart_rx_inst|                                                                                                            ; 73 (73)             ; 55 (55)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|serial_out:serial_out|uart_rx:uart_rx_inst                                                                                                                                                                                                                                                                                                 ; uart_rx                           ; work         ;
 ;    |servant:servant|                                                                                                                    ; 458 (0)             ; 252 (0)                   ; 263296      ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|servant:servant                                                                                                                                                                                                                                                                                                                            ; servant                           ; work         ;
 ;       |serv_rf_ram:rf_ram|                                                                                                              ; 2 (2)               ; 1 (1)                     ; 1152        ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|servant:servant|serv_rf_ram:rf_ram                                                                                                                                                                                                                                                                                                         ; serv_rf_ram                       ; work         ;
 ;          |altsyncram:memory_rtl_0|                                                                                                      ; 0 (0)               ; 0 (0)                     ; 1152        ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|servant:servant|serv_rf_ram:rf_ram|altsyncram:memory_rtl_0                                                                                                                                                                                                                                                                                 ; altsyncram                        ; work         ;
@@ -365,7 +366,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |servant_mux:servant_mux|                                                                                                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|servant:servant|servant_mux:servant_mux                                                                                                                                                                                                                                                                                                    ; servant_mux                       ; work         ;
 ;       |servant_ram:ram|                                                                                                                 ; 7 (7)               ; 1 (1)                     ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|servant:servant|servant_ram:ram                                                                                                                                                                                                                                                                                                            ; servant_ram                       ; work         ;
 ;          |altsyncram:mem_rtl_0|                                                                                                         ; 0 (0)               ; 0 (0)                     ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|servant:servant|servant_ram:ram|altsyncram:mem_rtl_0                                                                                                                                                                                                                                                                                       ; altsyncram                        ; work         ;
-;             |altsyncram_dmg1:auto_generated|                                                                                            ; 0 (0)               ; 0 (0)                     ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|servant:servant|servant_ram:ram|altsyncram:mem_rtl_0|altsyncram_dmg1:auto_generated                                                                                                                                                                                                                                                        ; altsyncram_dmg1                   ; work         ;
+;             |altsyncram_mkg1:auto_generated|                                                                                            ; 0 (0)               ; 0 (0)                     ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|servant:servant|servant_ram:ram|altsyncram:mem_rtl_0|altsyncram_mkg1:auto_generated                                                                                                                                                                                                                                                        ; altsyncram_mkg1                   ; work         ;
 ;       |servant_timer:timer|                                                                                                             ; 98 (98)             ; 65 (65)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|servant:servant|servant_timer:timer                                                                                                                                                                                                                                                                                                        ; servant_timer                     ; work         ;
 ;       |servile:cpu|                                                                                                                     ; 349 (0)             ; 182 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|servant:servant|servile:cpu                                                                                                                                                                                                                                                                                                                ; servile                           ; work         ;
 ;          |serv_rf_ram_if:rf_ram_if|                                                                                                     ; 39 (39)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servive|servant:servant|servile:cpu|serv_rf_ram_if:rf_ram_if                                                                                                                                                                                                                                                                                       ; serv_rf_ram_if                    ; work         ;
@@ -404,7 +405,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+----------------------------------------------------+
 ; serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 64           ; 8            ; 64           ; 8            ; 512    ; None                                               ;
 ; servant:servant|serv_rf_ram:rf_ram|altsyncram:memory_rtl_0|altsyncram_qvg1:auto_generated|ALTSYNCRAM                                                                                                                                ; AUTO ; Simple Dual Port ; 576          ; 2            ; 576          ; 2            ; 1152   ; None                                               ;
-; servant:servant|servant_ram:ram|altsyncram:mem_rtl_0|altsyncram_dmg1:auto_generated|ALTSYNCRAM                                                                                                                                      ; AUTO ; Single Port      ; 8192         ; 32           ; --           ; --           ; 262144 ; db/servant_1_3_0.ram0_servant_ram_db6d529d.hdl.mif ;
+; servant:servant|servant_ram:ram|altsyncram:mem_rtl_0|altsyncram_mkg1:auto_generated|ALTSYNCRAM                                                                                                                                      ; AUTO ; Single Port      ; 8192         ; 32           ; --           ; --           ; 262144 ; db/servant_1_3_0.ram0_servant_ram_b25c1f73.hdl.mif ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+----------------------------------------------------+
 
 
@@ -484,11 +485,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 483   ;
-; Number of registers using Synchronous Clear  ; 91    ;
+; Number of registers using Synchronous Clear  ; 92    ;
 ; Number of registers using Synchronous Load   ; 11    ;
-; Number of registers using Asynchronous Clear ; 160   ;
+; Number of registers using Asynchronous Clear ; 168   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 337   ;
+; Number of registers using Clock Enable       ; 306   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -526,17 +527,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |servive|servant:servant|servile:cpu|serv_top:cpu|serv_state:state|init_done                                                                    ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|count[5]    ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |servive|servant:servant|servile:cpu|serv_rf_ram_if:rf_ram_if|rcnt[2]                                                                           ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |servive|servant:servant|servant_timer:timer|mtimecmp[13]                                                                                       ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |servive|serial_out:serial_out|uart_rx:uart_rx_inst|bit_index[1]                                                                                ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|td_shift[9] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|count[4]    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |servive|servant:servant|servile:cpu|serv_rf_ram_if:rf_ram_if|rcnt[4]                                                                           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |servive|servant:servant|servant_timer:timer|mtimecmp[20]                                                                                       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|td_shift[8] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |servive|serial_out:serial_out|uart_rx:uart_rx_inst|valid                                                                                       ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |servive|serial_out:serial_out|uart_rx:uart_rx_inst|data[2]                                                                                     ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |servive|serial_out:serial_out|uart_rx:uart_rx_inst|bit_index[3]                                                                                ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |servive|serial_out:serial_out|uart_rx:uart_rx_inst|shift_reg[2]                                                                                ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |servive|servant:servant|servile:cpu|serv_top:cpu|serv_bufreg2:bufreg2|dat[3]                                                                   ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|td_shift[4] ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|td_shift[1] ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |servive|serial_out:serial_out|uart_rx:uart_rx_inst|counter[5]                                                                                  ;
-; 4:1                ; 27 bits   ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; Yes        ; |servive|servant:servant|servile:cpu|serv_top:cpu|serv_bufreg2:bufreg2|dat[23]                                                                  ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |servive|servant:servant|servile:cpu|serv_rf_ram_if:rf_ram_if|o_waddr[7]                                                                        ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|td_shift[3] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |servive|serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|td_shift[5] ;
+; 4:1                ; 27 bits   ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; Yes        ; |servive|servant:servant|servile:cpu|serv_top:cpu|serv_bufreg2:bufreg2|dat[20]                                                                  ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |servive|serial_out:serial_out|uart_rx:uart_rx_inst|counter[26]                                                                                 ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |servive|servant:servant|servile:cpu|serv_rf_ram_if:rf_ram_if|o_waddr[6]                                                                        ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |servive|servant:servant|servile:cpu|serv_rf_ram_if:rf_ram_if|o_waddr[4]                                                                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -560,7 +564,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------+
-; Source assignments for servant:servant|servant_ram:ram|altsyncram:mem_rtl_0|altsyncram_dmg1:auto_generated ;
+; Source assignments for servant:servant|servant_ram:ram|altsyncram:mem_rtl_0|altsyncram_mkg1:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                           ;
 +---------------------------------+--------------------+------+----------------------------------------------+
@@ -579,12 +583,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +-------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Top-level Entity: |servive ;
-+----------------+-----------------------------------+--------------------+
-; Parameter Name ; Value                             ; Type               ;
-+----------------+-----------------------------------+--------------------+
-; memfile        ; ./src/servant_1.3.0/sw/blinky.hex ; Untyped            ;
-; memsize        ; 32768                             ; Untyped            ;
-+----------------+-----------------------------------+--------------------+
++----------------+---------------------------------+----------------------+
+; Parameter Name ; Value                           ; Type                 ;
++----------------+---------------------------------+----------------------+
+; memfile        ; ./src/servant_1.3.0/sw/test.hex ; Untyped              ;
+; memsize        ; 32768                           ; Untyped              ;
++----------------+---------------------------------+----------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -962,21 +966,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: servant:servant         ;
-+----------------+-----------------------------------+-----------------+
-; Parameter Name ; Value                             ; Type            ;
-+----------------+-----------------------------------+-----------------+
-; memfile        ; ./src/servant_1.3.0/sw/blinky.hex ; String          ;
-; memsize        ; 32768                             ; Signed Integer  ;
-; reset_strategy ; MINI                              ; String          ;
-; width          ; 1                                 ; Signed Integer  ;
-; sim            ; 0                                 ; Signed Integer  ;
-; debug          ; 0                                 ; Unsigned Binary ;
-; with_csr       ; 1                                 ; Signed Integer  ;
-; compress       ; 0                                 ; Unsigned Binary ;
-; align          ; 0                                 ; Unsigned Binary ;
-+----------------+-----------------------------------+-----------------+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: servant:servant       ;
++----------------+---------------------------------+-----------------+
+; Parameter Name ; Value                           ; Type            ;
++----------------+---------------------------------+-----------------+
+; memfile        ; ./src/servant_1.3.0/sw/test.hex ; String          ;
+; memsize        ; 32768                           ; Signed Integer  ;
+; reset_strategy ; MINI                            ; String          ;
+; width          ; 1                               ; Signed Integer  ;
+; sim            ; 0                               ; Signed Integer  ;
+; debug          ; 0                               ; Unsigned Binary ;
+; with_csr       ; 1                               ; Signed Integer  ;
+; compress       ; 0                               ; Unsigned Binary ;
+; align          ; 0                               ; Unsigned Binary ;
++----------------+---------------------------------+-----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -992,14 +996,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: servant:servant|servant_ram:ram ;
-+----------------+-----------------------------------+-------------------------+
-; Parameter Name ; Value                             ; Type                    ;
-+----------------+-----------------------------------+-------------------------+
-; depth          ; 32768                             ; Signed Integer          ;
-; aw             ; 15                                ; Signed Integer          ;
-; RESET_STRATEGY ; MINI                              ; String                  ;
-; memfile        ; ./src/servant_1.3.0/sw/blinky.hex ; String                  ;
-+----------------+-----------------------------------+-------------------------+
++----------------+---------------------------------+---------------------------+
+; Parameter Name ; Value                           ; Type                      ;
++----------------+---------------------------------+---------------------------+
+; depth          ; 32768                           ; Signed Integer            ;
+; aw             ; 15                              ; Signed Integer            ;
+; RESET_STRATEGY ; MINI                            ; String                    ;
+; memfile        ; ./src/servant_1.3.0/sw/test.hex ; String                    ;
++----------------+---------------------------------+---------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1209,7 +1213,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                           ;
 +----------------+-------+----------------------------------------------------------------+
-; BAUD_TICKS     ; 28781 ; Signed Integer                                                 ;
+; BAUD_TICKS     ; 800   ; Signed Integer                                                 ;
 +----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1315,7 +1319,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                          ; Untyped        ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; OLD_DATA                                           ; Untyped        ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                               ; Untyped        ;
-; INIT_FILE                          ; db/servant_1_3_0.ram0_servant_ram_db6d529d.hdl.mif ; Untyped        ;
+; INIT_FILE                          ; db/servant_1_3_0.ram0_servant_ram_b25c1f73.hdl.mif ; Untyped        ;
 ; INIT_FILE_LAYOUT                   ; PORT_A                                             ; Untyped        ;
 ; MAXIMUM_DEPTH                      ; 0                                                  ; Untyped        ;
 ; CLOCK_ENABLE_INPUT_A               ; NORMAL                                             ; Untyped        ;
@@ -1328,7 +1332,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                              ; Untyped        ;
 ; WIDTH_ECCSTATUS                    ; 3                                                  ; Untyped        ;
 ; DEVICE_FAMILY                      ; Cyclone IV E                                       ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_dmg1                                    ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_mkg1                                    ; Untyped        ;
 +------------------------------------+----------------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1535,28 +1539,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 16                          ;
 ; cycloneiii_ff         ; 408                         ;
-;     CLR               ; 32                          ;
-;     ENA               ; 181                         ;
-;     ENA CLR           ; 71                          ;
-;     ENA CLR SCLR      ; 35                          ;
+;     CLR               ; 30                          ;
+;     CLR SCLR          ; 33                          ;
+;     ENA               ; 173                         ;
+;     ENA CLR           ; 80                          ;
+;     ENA CLR SCLR      ; 3                           ;
 ;     ENA SCLR          ; 3                           ;
 ;     ENA SLD           ; 2                           ;
 ;     SCLR              ; 41                          ;
 ;     plain             ; 43                          ;
-; cycloneiii_lcell_comb ; 621                         ;
+; cycloneiii_lcell_comb ; 629                         ;
 ;     arith             ; 122                         ;
 ;         2 data inputs ; 81                          ;
 ;         3 data inputs ; 41                          ;
-;     normal            ; 499                         ;
+;     normal            ; 507                         ;
 ;         1 data inputs ; 12                          ;
-;         2 data inputs ; 112                         ;
-;         3 data inputs ; 101                         ;
-;         4 data inputs ; 274                         ;
+;         2 data inputs ; 117                         ;
+;         3 data inputs ; 102                         ;
+;         4 data inputs ; 276                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 42                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 3.01                        ;
+; Average LUT depth     ; 2.99                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1575,133 +1580,131 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Apr 14 07:08:36 2025
+    Info: Processing started: Thu May 01 16:33:20 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off servant_1_3_0 -c servant_1_3_0
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file src/bench/uart_decoder.v
-    Info (12023): Found entity 1: uart_decoder File: D:/serv_project/build/servant_1.3.0/without_spi/src/bench/uart_decoder.v Line: 1
+    Info (12023): Found entity 1: uart_decoder File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/bench/uart_decoder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/bench/servant_tb.v
-    Info (12023): Found entity 1: servant_tb File: D:/serv_project/build/servant_1.3.0/without_spi/src/bench/servant_tb.v Line: 2
+    Info (12023): Found entity 1: servant_tb File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/bench/servant_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/bench/servant_sim.v
-    Info (12023): Found entity 1: servant_sim File: D:/serv_project/build/servant_1.3.0/without_spi/src/bench/servant_sim.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/uart_rx.v
-    Info (12023): Found entity 1: uart_rx File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/uart_rx.v Line: 1
-Info (12021): Found 5 design units, including 5 entities, in source file /serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v
-    Info (12023): Found entity 1: serial_out_jtag_uart_0_sim_scfifo_w File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 21
-    Info (12023): Found entity 2: serial_out_jtag_uart_0_scfifo_w File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 78
-    Info (12023): Found entity 3: serial_out_jtag_uart_0_sim_scfifo_r File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 164
-    Info (12023): Found entity 4: serial_out_jtag_uart_0_scfifo_r File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 243
-    Info (12023): Found entity 5: serial_out_jtag_uart_0 File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 331
-Info (12021): Found 1 design units, including 1 entities, in source file /serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v
-    Info (12023): Found entity 1: serial_out File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file /serv_project/build/servant_1.3.0/testbench/gen_test.v
-    Info (12023): Found entity 1: gen_test File: D:/serv_project/build/servant_1.3.0/testbench/gen_test.v Line: 3
+    Info (12023): Found entity 1: servant_sim File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/bench/servant_sim.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /github/2025-fpga-design-projects-fpga_spi_i2c/serial_out/synthesis/submodules/uart_rx.v
+    Info (12023): Found entity 1: uart_rx File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/uart_rx.v Line: 1
+Info (12021): Found 5 design units, including 5 entities, in source file /github/2025-fpga-design-projects-fpga_spi_i2c/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v
+    Info (12023): Found entity 1: serial_out_jtag_uart_0_sim_scfifo_w File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 21
+    Info (12023): Found entity 2: serial_out_jtag_uart_0_scfifo_w File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 78
+    Info (12023): Found entity 3: serial_out_jtag_uart_0_sim_scfifo_r File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 164
+    Info (12023): Found entity 4: serial_out_jtag_uart_0_scfifo_r File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 243
+    Info (12023): Found entity 5: serial_out_jtag_uart_0 File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 331
+Info (12021): Found 1 design units, including 1 entities, in source file /github/2025-fpga-design-projects-fpga_spi_i2c/serial_out/synthesis/serial_out.v
+    Info (12023): Found entity 1: serial_out File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/serial_out.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /github/2025-fpga-design-projects-fpga_spi_i2c/testbench/gen_test.v
+    Info (12023): Found entity 1: gen_test File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/testbench/gen_test.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_bufreg.v
-    Info (12023): Found entity 1: serv_bufreg File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_bufreg.v Line: 1
+    Info (12023): Found entity 1: serv_bufreg File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_bufreg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_bufreg2.v
-    Info (12023): Found entity 1: serv_bufreg2 File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_bufreg2.v Line: 1
+    Info (12023): Found entity 1: serv_bufreg2 File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_bufreg2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_alu.v
-    Info (12023): Found entity 1: serv_alu File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_alu.v Line: 2
+    Info (12023): Found entity 1: serv_alu File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_alu.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_csr.v
-    Info (12023): Found entity 1: serv_csr File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_csr.v Line: 2
+    Info (12023): Found entity 1: serv_csr File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_csr.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_ctrl.v
-    Info (12023): Found entity 1: serv_ctrl File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_ctrl.v Line: 2
+    Info (12023): Found entity 1: serv_ctrl File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_ctrl.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_decode.v
-    Info (12023): Found entity 1: serv_decode File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_decode.v Line: 2
+    Info (12023): Found entity 1: serv_decode File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_decode.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_immdec.v
-    Info (12023): Found entity 1: serv_immdec File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_immdec.v Line: 2
+    Info (12023): Found entity 1: serv_immdec File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_immdec.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_mem_if.v
-    Info (12023): Found entity 1: serv_mem_if File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_mem_if.v Line: 2
+    Info (12023): Found entity 1: serv_mem_if File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_mem_if.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_rf_if.v
-    Info (12023): Found entity 1: serv_rf_if File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_if.v Line: 2
+    Info (12023): Found entity 1: serv_rf_if File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_rf_if.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_rf_ram_if.v
-    Info (12023): Found entity 1: serv_rf_ram_if File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_ram_if.v Line: 2
+    Info (12023): Found entity 1: serv_rf_ram_if File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_rf_ram_if.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_rf_ram.v
-    Info (12023): Found entity 1: serv_rf_ram File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_ram.v Line: 1
+    Info (12023): Found entity 1: serv_rf_ram File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_rf_ram.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_state.v
-    Info (12023): Found entity 1: serv_state File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_state.v Line: 1
+    Info (12023): Found entity 1: serv_state File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_state.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_debug.v
-    Info (12023): Found entity 1: serv_debug File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_debug.v Line: 1
+    Info (12023): Found entity 1: serv_debug File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_debug.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_top.v
-    Info (12023): Found entity 1: serv_top File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 3
+    Info (12023): Found entity 1: serv_top File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_rf_top.v
-    Info (12023): Found entity 1: serv_rf_top File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_top.v Line: 3
+    Info (12023): Found entity 1: serv_rf_top File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_rf_top.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_aligner.v
-    Info (12023): Found entity 1: serv_aligner File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_aligner.v Line: 1
+    Info (12023): Found entity 1: serv_aligner File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_aligner.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/serv_1.3.0/rtl/serv_compdec.v
-    Info (12023): Found entity 1: serv_compdec File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_compdec.v Line: 10
+    Info (12023): Found entity 1: serv_compdec File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_compdec.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file src/servile_1.3.0/servile/servile_rf_mem_if.v
-    Info (12023): Found entity 1: servile_rf_mem_if File: D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile_rf_mem_if.v Line: 9
+    Info (12023): Found entity 1: servile_rf_mem_if File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servile_1.3.0/servile/servile_rf_mem_if.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file src/servile_1.3.0/servile/servile_mux.v
-    Info (12023): Found entity 1: servile_mux File: D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile_mux.v Line: 8
+    Info (12023): Found entity 1: servile_mux File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servile_1.3.0/servile/servile_mux.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file src/servile_1.3.0/servile/servile_arbiter.v
-    Info (12023): Found entity 1: servile_arbiter File: D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile_arbiter.v Line: 9
+    Info (12023): Found entity 1: servile_arbiter File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servile_1.3.0/servile/servile_arbiter.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file src/servile_1.3.0/servile/servile.v
-    Info (12023): Found entity 1: servile File: D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile.v Line: 9
+    Info (12023): Found entity 1: servile File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servile_1.3.0/servile/servile.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file src/servant_1.3.0/servant/servant_timer.v
-    Info (12023): Found entity 1: servant_timer File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_timer.v Line: 2
+    Info (12023): Found entity 1: servant_timer File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant_timer.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/servant_1.3.0/servant/servant_gpio.v
-    Info (12023): Found entity 1: servant_gpio File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_gpio.v Line: 1
+    Info (12023): Found entity 1: servant_gpio File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant_gpio.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/servant_1.3.0/servant/servant_mux.v
-    Info (12023): Found entity 1: servant_mux File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_mux.v Line: 7
+    Info (12023): Found entity 1: servant_mux File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant_mux.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file src/servant_1.3.0/servant/servant_ram_quartus.sv
-    Info (12023): Found entity 1: servant_ram File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_ram_quartus.sv Line: 2
+    Info (12023): Found entity 1: servant_ram File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant_ram_quartus.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/servant_1.3.0/servant/servant.v
-    Info (12023): Found entity 1: servant File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant.v Line: 2
+    Info (12023): Found entity 1: servant File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/servant_1.3.0/servant/servive_clock_gen.v
-    Info (12023): Found entity 1: servive_clock_gen File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v Line: 2
+    Info (12023): Found entity 1: servive_clock_gen File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/servant_1.3.0/servant/servive.v
-    Info (12023): Found entity 1: servive File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive.v Line: 2
+    Info (12023): Found entity 1: servive File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servive.v Line: 2
 Info (12127): Elaborating entity "servive" for the top level hierarchy
-Info (12128): Elaborating entity "servive_clock_gen" for hierarchy "servive_clock_gen:clock_gen" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive.v Line: 21
-Info (12128): Elaborating entity "altpll" for hierarchy "servive_clock_gen:clock_gen|altpll:pll" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v Line: 32
-Info (12130): Elaborated megafunction instantiation "servive_clock_gen:clock_gen|altpll:pll" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v Line: 32
-Info (12133): Instantiated megafunction "servive_clock_gen:clock_gen|altpll:pll" with the following parameter: File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v Line: 32
+Info (12128): Elaborating entity "servive_clock_gen" for hierarchy "servive_clock_gen:clock_gen" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servive.v Line: 21
+Info (12128): Elaborating entity "altpll" for hierarchy "servive_clock_gen:clock_gen|altpll:pll" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v Line: 32
+Info (12130): Elaborated megafunction instantiation "servive_clock_gen:clock_gen|altpll:pll" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v Line: 32
+Info (12133): Instantiated megafunction "servive_clock_gen:clock_gen|altpll:pll" with the following parameter: File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servive_clock_gen.v Line: 32
     Info (12134): Parameter "operation_mode" = "NORMAL"
     Info (12134): Parameter "clk0_divide_by" = "25"
     Info (12134): Parameter "clk0_multiply_by" = "8"
     Info (12134): Parameter "inclk0_input_frequency" = "20000"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altpll_85l.tdf
-    Info (12023): Found entity 1: altpll_85l File: D:/serv_project/build/servant_1.3.0/without_spi/db/altpll_85l.tdf Line: 28
+    Info (12023): Found entity 1: altpll_85l File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altpll_85l.tdf Line: 28
 Info (12128): Elaborating entity "altpll_85l" for hierarchy "servive_clock_gen:clock_gen|altpll:pll|altpll_85l:auto_generated" File: d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "servant" for hierarchy "servant:servant" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive.v Line: 29
-Info (12128): Elaborating entity "servant_mux" for hierarchy "servant:servant|servant_mux:servant_mux" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant.v Line: 87
-Info (12128): Elaborating entity "servant_ram" for hierarchy "servant:servant|servant_ram:ram" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant.v Line: 103
-Info (10648): Verilog HDL Display System Task info at servant_ram_quartus.sv(42): Preloading ...|servant_ram from ./src/servant_1.3.0/sw/blinky.hex File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_ram_quartus.sv Line: 42
-Warning (10850): Verilog HDL warning at servant_ram_quartus.sv(43): number of words (11) in memory file does not match the number of elements in the address range [0:8191] File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant_ram_quartus.sv Line: 43
-Info (12128): Elaborating entity "servant_timer" for hierarchy "servant:servant|servant_timer:timer" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant.v Line: 115
-Info (12128): Elaborating entity "servant_gpio" for hierarchy "servant:servant|servant_gpio:gpio" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant.v Line: 123
-Info (12128): Elaborating entity "serv_rf_ram" for hierarchy "servant:servant|serv_rf_ram:rf_ram" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant.v Line: 135
-Info (12128): Elaborating entity "servile" for hierarchy "servant:servant|servile:cpu" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servant.v Line: 171
-Info (12128): Elaborating entity "servile_mux" for hierarchy "servant:servant|servile:cpu|servile_mux:mux" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile.v Line: 127
-Info (12128): Elaborating entity "servile_arbiter" for hierarchy "servant:servant|servile:cpu|servile_arbiter:arbiter" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile.v Line: 149
-Info (12128): Elaborating entity "serv_rf_ram_if" for hierarchy "servant:servant|servile:cpu|serv_rf_ram_if:rf_ram_if" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile.v Line: 181
-Warning (10230): Verilog HDL assignment warning at serv_rf_ram_if.v(94): truncated value with size 32 to match size of target (5) File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_rf_ram_if.v Line: 94
-Info (12128): Elaborating entity "serv_top" for hierarchy "servant:servant|servile:cpu|serv_top:cpu" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servile_1.3.0/servile/servile.v Line: 276
-Info (12128): Elaborating entity "serv_state" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_state:state" File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 287
-Info (12128): Elaborating entity "serv_decode" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_decode:decode" File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 353
-Info (12128): Elaborating entity "serv_immdec" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_immdec:immdec" File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 373
-Info (12128): Elaborating entity "serv_bufreg" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_bufreg:bufreg" File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 398
-Info (12128): Elaborating entity "serv_bufreg2" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_bufreg2:bufreg2" File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 422
-Warning (10230): Verilog HDL assignment warning at serv_bufreg2.v(43): truncated value with size 32 to match size of target (6) File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_bufreg2.v Line: 43
-Info (12128): Elaborating entity "serv_ctrl" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_ctrl:ctrl" File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 453
-Info (12128): Elaborating entity "serv_alu" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_alu:alu" File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 472
-Info (12128): Elaborating entity "serv_rf_if" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_rf_if:rf_if" File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 521
-Info (12128): Elaborating entity "serv_mem_if" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_mem_if:mem_if" File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 543
-Info (12128): Elaborating entity "serv_csr" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_csr:gen_csr.csr" File: D:/serv_project/build/servant_1.3.0/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 582
-Info (12128): Elaborating entity "serial_out" for hierarchy "serial_out:serial_out" File: D:/serv_project/build/servant_1.3.0/without_spi/src/servant_1.3.0/servant/servive.v Line: 35
-Warning (10036): Verilog HDL or VHDL warning at serial_out.v(25): object "temp_data" assigned a value but never read File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v Line: 25
-Warning (10240): Verilog HDL Always Construct warning at serial_out.v(66): inferring latch(es) for variable "av_read_n", which holds its previous value in one or more paths through the always construct File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v Line: 66
-Info (10041): Inferred latch for "av_read_n" at serial_out.v(66) File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v Line: 66
-Info (12128): Elaborating entity "uart_rx" for hierarchy "serial_out:serial_out|uart_rx:uart_rx_inst" File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v Line: 34
-Warning (10230): Verilog HDL assignment warning at uart_rx.v(35): truncated value with size 32 to match size of target (4) File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/uart_rx.v Line: 35
-Warning (10230): Verilog HDL assignment warning at uart_rx.v(43): truncated value with size 32 to match size of target (4) File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/uart_rx.v Line: 43
-Info (12128): Elaborating entity "serial_out_jtag_uart_0" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish" File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/serial_out.v Line: 98
-Info (12128): Elaborating entity "serial_out_jtag_uart_0_scfifo_w" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w" File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 420
-Info (12128): Elaborating entity "scfifo" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo" File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 139
-Info (12130): Elaborated megafunction instantiation "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo" File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 139
-Info (12133): Instantiated megafunction "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo" with the following parameter: File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 139
+Info (12128): Elaborating entity "servant" for hierarchy "servant:servant" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servive.v Line: 29
+Info (12128): Elaborating entity "servant_mux" for hierarchy "servant:servant|servant_mux:servant_mux" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant.v Line: 87
+Info (12128): Elaborating entity "servant_ram" for hierarchy "servant:servant|servant_ram:ram" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant.v Line: 103
+Info (10648): Verilog HDL Display System Task info at servant_ram_quartus.sv(42): Preloading ...|servant_ram from ./src/servant_1.3.0/sw/test.hex File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant_ram_quartus.sv Line: 42
+Warning (10850): Verilog HDL warning at servant_ram_quartus.sv(43): number of words (29) in memory file does not match the number of elements in the address range [0:8191] File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant_ram_quartus.sv Line: 43
+Info (12128): Elaborating entity "servant_timer" for hierarchy "servant:servant|servant_timer:timer" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant.v Line: 115
+Info (12128): Elaborating entity "servant_gpio" for hierarchy "servant:servant|servant_gpio:gpio" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant.v Line: 123
+Info (12128): Elaborating entity "serv_rf_ram" for hierarchy "servant:servant|serv_rf_ram:rf_ram" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant.v Line: 135
+Info (12128): Elaborating entity "servile" for hierarchy "servant:servant|servile:cpu" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servant.v Line: 171
+Info (12128): Elaborating entity "servile_mux" for hierarchy "servant:servant|servile:cpu|servile_mux:mux" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servile_1.3.0/servile/servile.v Line: 127
+Info (12128): Elaborating entity "servile_arbiter" for hierarchy "servant:servant|servile:cpu|servile_arbiter:arbiter" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servile_1.3.0/servile/servile.v Line: 149
+Info (12128): Elaborating entity "serv_rf_ram_if" for hierarchy "servant:servant|servile:cpu|serv_rf_ram_if:rf_ram_if" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servile_1.3.0/servile/servile.v Line: 181
+Warning (10230): Verilog HDL assignment warning at serv_rf_ram_if.v(94): truncated value with size 32 to match size of target (5) File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_rf_ram_if.v Line: 94
+Info (12128): Elaborating entity "serv_top" for hierarchy "servant:servant|servile:cpu|serv_top:cpu" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servile_1.3.0/servile/servile.v Line: 276
+Info (12128): Elaborating entity "serv_state" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_state:state" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 287
+Info (12128): Elaborating entity "serv_decode" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_decode:decode" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 353
+Info (12128): Elaborating entity "serv_immdec" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_immdec:immdec" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 373
+Info (12128): Elaborating entity "serv_bufreg" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_bufreg:bufreg" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 398
+Info (12128): Elaborating entity "serv_bufreg2" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_bufreg2:bufreg2" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 422
+Warning (10230): Verilog HDL assignment warning at serv_bufreg2.v(43): truncated value with size 32 to match size of target (6) File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_bufreg2.v Line: 43
+Info (12128): Elaborating entity "serv_ctrl" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_ctrl:ctrl" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 453
+Info (12128): Elaborating entity "serv_alu" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_alu:alu" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 472
+Info (12128): Elaborating entity "serv_rf_if" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_rf_if:rf_if" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 521
+Info (12128): Elaborating entity "serv_mem_if" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_mem_if:mem_if" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 543
+Info (12128): Elaborating entity "serv_csr" for hierarchy "servant:servant|servile:cpu|serv_top:cpu|serv_csr:gen_csr.csr" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/serv_1.3.0/rtl/serv_top.v Line: 582
+Info (12128): Elaborating entity "serial_out" for hierarchy "serial_out:serial_out" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/src/servant_1.3.0/servant/servive.v Line: 35
+Warning (10036): Verilog HDL or VHDL warning at serial_out.v(25): object "temp_data" assigned a value but never read File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/serial_out.v Line: 25
+Warning (10240): Verilog HDL Always Construct warning at serial_out.v(66): inferring latch(es) for variable "av_read_n", which holds its previous value in one or more paths through the always construct File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/serial_out.v Line: 66
+Info (10041): Inferred latch for "av_read_n" at serial_out.v(66) File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/serial_out.v Line: 66
+Info (12128): Elaborating entity "uart_rx" for hierarchy "serial_out:serial_out|uart_rx:uart_rx_inst" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/serial_out.v Line: 34
+Info (12128): Elaborating entity "serial_out_jtag_uart_0" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/serial_out.v Line: 98
+Info (12128): Elaborating entity "serial_out_jtag_uart_0_scfifo_w" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 420
+Info (12128): Elaborating entity "scfifo" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 139
+Info (12130): Elaborated megafunction instantiation "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 139
+Info (12133): Instantiated megafunction "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo" with the following parameter: File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 139
     Info (12134): Parameter "lpm_hint" = "RAM_BLOCK_TYPE=AUTO"
     Info (12134): Parameter "lpm_numwords" = "64"
     Info (12134): Parameter "lpm_showahead" = "OFF"
@@ -1712,27 +1715,27 @@ Info (12133): Instantiated megafunction "serial_out:serial_out|serial_out_jtag_u
     Info (12134): Parameter "underflow_checking" = "OFF"
     Info (12134): Parameter "use_eab" = "ON"
 Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_jr21.tdf
-    Info (12023): Found entity 1: scfifo_jr21 File: D:/serv_project/build/servant_1.3.0/without_spi/db/scfifo_jr21.tdf Line: 25
+    Info (12023): Found entity 1: scfifo_jr21 File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/scfifo_jr21.tdf Line: 25
 Info (12128): Elaborating entity "scfifo_jr21" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated" File: d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf Line: 300
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_l011.tdf
-    Info (12023): Found entity 1: a_dpfifo_l011 File: D:/serv_project/build/servant_1.3.0/without_spi/db/a_dpfifo_l011.tdf Line: 29
-Info (12128): Elaborating entity "a_dpfifo_l011" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo" File: D:/serv_project/build/servant_1.3.0/without_spi/db/scfifo_jr21.tdf Line: 38
+    Info (12023): Found entity 1: a_dpfifo_l011 File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/a_dpfifo_l011.tdf Line: 29
+Info (12128): Elaborating entity "a_dpfifo_l011" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/scfifo_jr21.tdf Line: 38
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_fefifo_7cf.tdf
-    Info (12023): Found entity 1: a_fefifo_7cf File: D:/serv_project/build/servant_1.3.0/without_spi/db/a_fefifo_7cf.tdf Line: 25
-Info (12128): Elaborating entity "a_fefifo_7cf" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|a_fefifo_7cf:fifo_state" File: D:/serv_project/build/servant_1.3.0/without_spi/db/a_dpfifo_l011.tdf Line: 43
+    Info (12023): Found entity 1: a_fefifo_7cf File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/a_fefifo_7cf.tdf Line: 25
+Info (12128): Elaborating entity "a_fefifo_7cf" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|a_fefifo_7cf:fifo_state" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/a_dpfifo_l011.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_do7.tdf
-    Info (12023): Found entity 1: cntr_do7 File: D:/serv_project/build/servant_1.3.0/without_spi/db/cntr_do7.tdf Line: 26
-Info (12128): Elaborating entity "cntr_do7" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw" File: D:/serv_project/build/servant_1.3.0/without_spi/db/a_fefifo_7cf.tdf Line: 39
+    Info (12023): Found entity 1: cntr_do7 File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/cntr_do7.tdf Line: 26
+Info (12128): Elaborating entity "cntr_do7" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/a_fefifo_7cf.tdf Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_nio1.tdf
-    Info (12023): Found entity 1: altsyncram_nio1 File: D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_nio1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_nio1" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram" File: D:/serv_project/build/servant_1.3.0/without_spi/db/a_dpfifo_l011.tdf Line: 44
+    Info (12023): Found entity 1: altsyncram_nio1 File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_nio1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_nio1" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/a_dpfifo_l011.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_1ob.tdf
-    Info (12023): Found entity 1: cntr_1ob File: D:/serv_project/build/servant_1.3.0/without_spi/db/cntr_1ob.tdf Line: 26
-Info (12128): Elaborating entity "cntr_1ob" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|cntr_1ob:rd_ptr_count" File: D:/serv_project/build/servant_1.3.0/without_spi/db/a_dpfifo_l011.tdf Line: 45
-Info (12128): Elaborating entity "serial_out_jtag_uart_0_scfifo_r" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r" File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 434
-Info (12128): Elaborating entity "alt_jtag_atlantic" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic" File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 569
-Info (12130): Elaborated megafunction instantiation "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic" File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 569
-Info (12133): Instantiated megafunction "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic" with the following parameter: File: D:/serv_project/build/servant_1.3.0/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 569
+    Info (12023): Found entity 1: cntr_1ob File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/cntr_1ob.tdf Line: 26
+Info (12128): Elaborating entity "cntr_1ob" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_w:the_serial_out_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|cntr_1ob:rd_ptr_count" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/a_dpfifo_l011.tdf Line: 45
+Info (12128): Elaborating entity "serial_out_jtag_uart_0_scfifo_r" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 434
+Info (12128): Elaborating entity "alt_jtag_atlantic" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 569
+Info (12130): Elaborated megafunction instantiation "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 569
+Info (12133): Instantiated megafunction "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic" with the following parameter: File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/serial_out/synthesis/submodules/serial_out_jtag_uart_0.v Line: 569
     Info (12134): Parameter "INSTANCE_ID" = "0"
     Info (12134): Parameter "LOG2_RXFIFO_DEPTH" = "6"
     Info (12134): Parameter "LOG2_TXFIFO_DEPTH" = "6"
@@ -1740,7 +1743,7 @@ Info (12133): Instantiated megafunction "serial_out:serial_out|serial_out_jtag_u
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|sld_jtag_endpoint_adapter:inst" File: d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_jtag_atlantic.v Line: 276
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|alt_jtag_atlantic:serial_out_jtag_uart_0_alt_jtag_atlantic|sld_jtag_endpoint_adapter:inst|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2025.04.14.07:08:58 Progress: Loading sld96f8cc7d/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2025.05.01.16:33:41 Progress: Loading sld96f8cc7d/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1751,28 +1754,28 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld96f8cc7d/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: D:/serv_project/build/servant_1.3.0/without_spi/db/ip/sld96f8cc7d/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/ip/sld96f8cc7d/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: D:/serv_project/build/servant_1.3.0/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: D:/serv_project/build/servant_1.3.0/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: D:/serv_project/build/servant_1.3.0/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: D:/serv_project/build/servant_1.3.0/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: D:/serv_project/build/servant_1.3.0/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: D:/serv_project/build/servant_1.3.0/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/ip/sld96f8cc7d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[0]" File: D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_nio1.tdf Line: 40
-        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[1]" File: D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_nio1.tdf Line: 70
-        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[2]" File: D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_nio1.tdf Line: 100
-        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[3]" File: D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_nio1.tdf Line: 130
-        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[4]" File: D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_nio1.tdf Line: 160
-        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[5]" File: D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_nio1.tdf Line: 190
-        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[6]" File: D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_nio1.tdf Line: 220
-        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[7]" File: D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_nio1.tdf Line: 250
+        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[0]" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_nio1.tdf Line: 40
+        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[1]" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_nio1.tdf Line: 70
+        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[2]" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_nio1.tdf Line: 100
+        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[3]" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_nio1.tdf Line: 130
+        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[4]" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_nio1.tdf Line: 160
+        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[5]" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_nio1.tdf Line: 190
+        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[6]" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_nio1.tdf Line: 220
+        Warning (14320): Synthesized away node "serial_out:serial_out|serial_out_jtag_uart_0:jtag_uart_0_kavish|serial_out_jtag_uart_0_scfifo_r:the_serial_out_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_l011:dpfifo|altsyncram_nio1:FIFOram|q_b[7]" File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_nio1.tdf Line: 250
 Info (19000): Inferred 2 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "servant:servant|servant_ram:ram|mem_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to SINGLE_PORT
@@ -1786,7 +1789,7 @@ Info (19000): Inferred 2 megafunctions from design logic
         Info (286033): Parameter READ_DURING_WRITE_MODE_PORT_A set to OLD_DATA
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter INIT_FILE set to db/servant_1_3_0.ram0_servant_ram_db6d529d.hdl.mif
+        Info (286033): Parameter INIT_FILE set to db/servant_1_3_0.ram0_servant_ram_b25c1f73.hdl.mif
     Info (276029): Inferred altsyncram megafunction from the following design logic: "servant:servant|serv_rf_ram:rf_ram|memory_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 2
@@ -1816,11 +1819,11 @@ Info (12133): Instantiated megafunction "servant:servant|servant_ram:ram|altsync
     Info (12134): Parameter "READ_DURING_WRITE_MODE_PORT_A" = "OLD_DATA"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-    Info (12134): Parameter "INIT_FILE" = "db/servant_1_3_0.ram0_servant_ram_db6d529d.hdl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_dmg1.tdf
-    Info (12023): Found entity 1: altsyncram_dmg1 File: D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_dmg1.tdf Line: 28
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "D:/serv_project/build/servant_1.3.0/without_spi/db/servant_1_3_0.ram0_servant_ram_db6d529d.hdl.mif" contains "don't care" values -- overwriting them with 0s File: d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "D:/serv_project/build/servant_1.3.0/without_spi/db/servant_1_3_0.ram0_servant_ram_db6d529d.hdl.mif" contains "don't care" values -- overwriting them with 0s File: d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12134): Parameter "INIT_FILE" = "db/servant_1_3_0.ram0_servant_ram_b25c1f73.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mkg1.tdf
+    Info (12023): Found entity 1: altsyncram_mkg1 File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_mkg1.tdf Line: 28
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/servant_1_3_0.ram0_servant_ram_b25c1f73.hdl.mif" contains "don't care" values -- overwriting them with 0s File: d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/servant_1_3_0.ram0_servant_ram_b25c1f73.hdl.mif" contains "don't care" values -- overwriting them with 0s File: d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12130): Elaborated megafunction instantiation "servant:servant|serv_rf_ram:rf_ram|altsyncram:memory_rtl_0"
 Info (12133): Instantiated megafunction "servant:servant|serv_rf_ram:rf_ram|altsyncram:memory_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -1839,7 +1842,7 @@ Info (12133): Instantiated megafunction "servant:servant|serv_rf_ram:rf_ram|alts
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qvg1.tdf
-    Info (12023): Found entity 1: altsyncram_qvg1 File: D:/serv_project/build/servant_1.3.0/without_spi/db/altsyncram_qvg1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_qvg1 File: D:/Github/2025-fpga-design-projects-fpga_SPI_I2C/without_spi/db/altsyncram_qvg1.tdf Line: 28
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13000): Registers with preset signals will power-up high File: d:/software/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_jtag_atlantic.v Line: 321
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
@@ -1847,16 +1850,16 @@ Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 14 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 918 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 924 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 866 logic cells
+    Info (21061): Implemented 872 logic cells
     Info (21064): Implemented 42 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 4842 megabytes
-    Info: Processing ended: Mon Apr 14 07:09:10 2025
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4847 megabytes
+    Info: Processing ended: Thu May 01 16:33:54 2025
     Info: Elapsed time: 00:00:34
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Total CPU time (on all processors): 00:01:02
 
 
