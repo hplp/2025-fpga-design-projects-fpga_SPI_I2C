@@ -68,7 +68,7 @@ Wishbone:
 - Requires high wire count **(100+ in total)**
 
 <p align="center">
-  <img src="images/wb_con.png" alt="wb_con" width="80%">
+  <img src="images/wb_con_2.png" alt="wb_con" width="80%">
 </p>
 > *Figure: Wishbone connection*
 
@@ -84,7 +84,7 @@ SPI
 > *Figure: SPI connection*
 
 <p align="center">
-  <img src="images/spi_read.png" alt="spi_read" width="80%">
+  <img src="images/spi_read_2.png" alt="spi_read" width="80%">
 </p>
 > *Figure: SPI Read (1 word)*
 
