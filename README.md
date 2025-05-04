@@ -5,6 +5,9 @@
 ### Team Name:
 FPGA Project Group 8
 
+### Final Presentation
+[Slides](https://myuva-my.sharepoint.com/:p:/g/personal/bp2sq_virginia_edu/EbR7KFxK4rZKp4n9x-FtiA0BusmC7vetWjMRAcpkG8rAVw?e=tEiBrJ)
+
 ### Team Members:
 - Bhasitha Dharmasena(bp2sq)
 - Kavish Ranawella(bue6zr)
@@ -88,6 +91,16 @@ SPI
 </p>
 > *Figure: SPI Read (1 word)*
 
+### Why integrate SPI with SERV?
+
+- **Decouples memory from CPU core**: Enables flexible memory placement and simplifies physical design for fabrication
+
+- **Minimal pin count**: Communicates with external RAM using only 4 wires (MISO, MOSI, SCK, CS), reducing I/O complexity
+
+- **Aligns with SERV’s bit-serial philosophy**: Maintains SERV’s ultra-minimal, bit-serial architecture by extending serial design principles to memory access
+
+- **Shrinks logic footprint**: Removes internal RAM, reducing FPGA resource usage and improving area efficiency for ASIC targets
+
 ### Full architecture
 
 <p align="center">
@@ -97,6 +110,7 @@ SPI
 Hardware components:
 - Altera DE0-Nano board
 - Adafruit SPI Non-Volatile FRAM Breakout (256 KB)
+- Arduino Nano 33 BLE Rev2
 
 For this project, we removed the I+D RAM in Servant and added a Wishbone-to-SPI convertor to use the SPI FRAM. On the other side, we implemented a UART TX decoder to capture data sent through the UART TX pin and print it on the NIOS-II terminal. We used a Nano 33 BLE board to write programs to the SPI FRAM.
 
@@ -141,7 +155,7 @@ During this demonstration we have made the SPI transfer a bit more faster to see
 
 #### Simple LED blink code
 
-Here we are 
+Here we are demonstrating a simple RISC-V assembly code that is used to blink an LED. In line 1, we are loading the address of the GPIO pin relavant to the LED into the register **x10** of the register file. The addresses of GPIO pins are outside the addresses available within the SPI FRAM (18 bit address = 256KB of memory). In lines 2 and 3 initial values are set for **x6** (maximum count) and **x5** (the next value for the LED) registers. Here **x0** is a special regsiter where the value is always 0. Next, we have two nested loops as **loop1** and **loop2**. **loop2** is used to increment the count at **x7** and when it reaches the maximum count, it exists to **loop1** where the LED is set using a SW (Store Word) instruction, the next value of the LED is set at **x5**, and the count in **x7** is reset to 0, before entering the **loop2** again.
 
 <p align="center">
   <a href="https://drive.google.com/file/d/1UUgeBskDR9mVubzMIdaTFAkc0gNOsYxZ/view?usp=share_link">
@@ -149,8 +163,23 @@ Here we are
   </a>
 </p>
 
+Since RISC-V is an open-source ISA, you can find a lot of tools like this to visualize the instruction execution. These are some tools we used for this project,
+- [RISC-V Instruction Encode/Decoder](https://luplab.gitlab.io/rvcodecjs/#q=sh+x7,+18(x11)&abi=false&isa=AUTO): Used to convert instructions between Assembly and Machine code.
+- [RISC-V Interpreter](https://www.cs.cornell.edu/courses/cs3410/2019sp/riscv/interpreter/#): This is the tool used in our demonstrations.
 
-###### Phil_FPGA
+#### The Dining Philosophers Problem
+The Dining Philosophers Problem is a classic example in computer science that illustrates issues related to synchronization, concurrency, and resource sharing. The main objective of this is to avoid deadlock.
+
+<p align="center">
+  <img src="images/at_the_table.png" alt="at_the_table" width="40%">
+
+- There are five philosophers sitting around a circular table.
+- Each philosopher alternates between thinking and eating.
+- In front of each philosopher is a plate of spaghetti, and between each pair of philosophers is one fork (so 5 philosophers, 5 forks total).
+- To eat, a philosopher needs both the left and right forks.
+- A philosopher must pick up the left fork and the right fork, eat, and then put them down.
+
+In this video, we are demonstrating a program to tackling this Dining Philosophers Problem running on Zephyr OS booted onto SERV. Here the instructions have already been uploaded to the SPI FRAM using a Nano 33 BLE and we start by uploading the bitstream to the FPGA and opening the NIOS-II terminal to watch what SERV prints on it. At the start, it prints that the Zephyr OS is successfully booted and then gives a description of the program is is going to run for the Dining Philosophers Problem. Howeveer, we miss most of the description since NIOS-II has buffer for the JTAG which gets filled up quickly if there is not terminal for it to dump every data it gets. So, we miss some data that is sent to it during the time it takes for us to open the NIOS-II terminal after uploading the bitstream to the FPGA. Once the program starts, it prints the status of each Philosopher one-by-one. The statuses include **Eating**, **Thinking**, **Starving**, **Holding one fork** and **Dropped one fork**. When the status of each philosopher change, it is updated on the terminal by SERV.
 
 <p align="center">
   <a href="https://drive.google.com/file/d/1jfpaKQ-QNw_TkuU8nPNkDuweIA12KOAj/view?usp=share_link">
@@ -158,10 +187,51 @@ Here we are
   </a>
 </p>
 
-###### fatal error
+As mentioned above, this program is running on Zephyr OS booted onto SERV. However, currently we are using the Nano 33 BLE to upload the instructions into the SPI FRAM everytime we want to run it. SERV doesn't have a bootloader to boot a fresh copy of the instructions every time is restarts. In this video, we are uploading the bitstream again while the program is running on SERV. This will force the SERV to restart but the memory will stay at the same state at which it was at the last instruction it was executing. Once SERV is restarted, the program will run from the beginning and will work fine until it prints the status of all the Philosophers once. Then the program gets stuck and then it crashes. However, since Zephyr OS is still running, it will detect that the program crashed and will start printing error messages indicating that. This proves that Zephyr OS is indeed booted up on SERV and is not running a baremetal application for the Dining Philosophers Problem.
 
 <p align="center">
   <a href="https://drive.google.com/file/d/1hI5hFdwxnWLBAq0oJeDXNCwUbL61QmHP/view?usp=share_link">
     <img src="images/fatal_error.png" alt="full_read_video" width="80%">
   </a>
 </p>
+
+### Resource Utilization
+
+| Architecture | Combinational ALUTs | Dedicated Logic Registers | Memory bits |
+|--------------|---------------------|---------------------------|-------------|
+| Without SPI  | 458                 | 252                       | 263296      |
+| With SPI     | 574.                | 333                       | 1152        |
+
+With our design, we have removed Instruction and Data Memories from the FPGA, hence we have saved up a lot in Memory bits. However, since we are using the a Wishbone-to-SPI converter for this project, the number of logic elements have increased. Instead of that, if we replaced the Wishbone with SPI we could reduce the number of logic elements as well. The remaining memory bits in our design are the memory bits used for the Register File, which is still in the FPGA.
+
+
+## 4. Conclusion
+
+In the Project Overview, we have discussed why we need to integrate SPI into SERV. This project has achieved them as follows,
+
+- **Decouples memory from CPU core**: Enables flexible memory placement and simplifies physical design for fabrication- <span style="color:dark green"> ***FULLY ACHIEVED***</span>
+
+- **Minimal pin count**: Communicates with external RAM using only 4 wires (MISO, MOSI, SCK, CS), reducing I/O complexity - <span style="color:dark green"> ***FULLY ACHIEVED***</span>
+
+- **Aligns with SERV’s bit-serial philosophy**: Maintains SERV’s ultra-minimal, bit-serial architecture by extending serial design principles to memory access - <span style="color:dark yellow"> ***PARTIALLY ACHIEVED***</span>
+
+- **Shrinks logic footprint**: Removes internal RAM, reducing FPGA resource usage and improving area efficiency for ASIC targets - <span style="color:dark yellow"> ***PARTIALLY ACHIEVED***</span>
+
+The first two were fully achieved, since now the memory is placed externally in an FRAM and accessed through SPI which only uses 4 wires. However, the last two were only partially achieved since for this project we are using a Wishbone-to-SPI convertor. The memory accessing is done serially but the Wishbone part still exists in the middle. We have reduced the footprint by moving the memory to an external device, but still we have added logic relevant to the convertor. By replacing Wishbone with SPI in future work, we can fully achieve these two as well. With this project, we have proved the feasibility of doing so.
+
+## 5. Future Work
+
+- **Eliminate Wishbone**: Replace the Wishbone bus with a fully bit-serial interconnect to further reduce logic complexity and align with SERV’s serial architecture.
+
+- **Add bootloader support**: Enable loading programs such as Zephyr RTOS from SPI RAM or other sources at startup.
+
+- **Integrate basic peripherals**:
+  * **GPIO**: Provide general-purpose I/O for basic hardware interfacing.
+  * **UART (RX)**: Allow serial communication for debugging or basic shell interaction.
+
+- **Implement I2C-based memory access**: Use I2C as an alternative to SPI for connecting external RAM — reducing wire count even further in ultra-minimal systems.
+
+## 6. References
+
+- [Original SERV Github](https://github.com/olofk/serv)
+- [Original SERV Documentation](https://serv.readthedocs.io/en/latest/reservoir.html)
