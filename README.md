@@ -134,7 +134,7 @@ During this demonstration we have slowed down the SPI transfer to a speed at whi
 
 <p align="left">
   <a href="https://drive.google.com/file/d/1KDIRkERrDE8EYaxHws5yh2GlXSTsdqAu/view?usp=share_link">
-    <img src="images/status_read_video.png" alt="read_status_video" width="40%">
+    <img src="images/LED_3.png" alt="read_status_video" width="40%">
   </a>
 </p>
 
@@ -150,7 +150,7 @@ During this demonstration we have made the SPI transfer a bit more faster to see
 
 <p align="left">
   <a href="https://drive.google.com/file/d/1Vq7eqjoP34EnMNm1Lf9qcPabsoCWh0Qd/view?usp=share_link">
-    <img src="images/full_read_video.png" alt="full_read_video" width="40%">
+    <img src="images/LED_3.png" alt="full_read_video" width="40%">
   </a>
 </p>
 
@@ -186,7 +186,7 @@ In this video, we are demonstrating a program to tackling this Dining Philosophe
 
 <p align="left">
   <a href="https://drive.google.com/file/d/1jfpaKQ-QNw_TkuU8nPNkDuweIA12KOAj/view?usp=share_link">
-    <img src="images/Phil_FPGA.png" alt="full_read_video" width="80%">
+    <img src="images/Phil_3.png" alt="full_read_video" width="80%">
   </a>
 </p>
 
