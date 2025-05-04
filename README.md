@@ -52,8 +52,8 @@ Serial RISC-V (SERV) is bit-serial CPU that claims to be the world's smallest RI
 
 ### What is SERV?
 
-<p align="center">
-  <img src="images/serv.png" alt="serv" width="80%">
+<p align="left">
+  <img src="images/serv.png" alt="serv" width="30%">
 </p>
 
 Serial RISC-V (SERV) is bit-serial CPU that claims to be the world's smallest RISC-V CPU. It is,
@@ -70,9 +70,10 @@ Wishbone:
 - Relatively high speed - **Can access 1 word using 1 clock cycle**
 - Requires high wire count **(100+ in total)**
 
-<p align="center">
-  <img src="images/wb_con_2.png" alt="wb_con" width="80%">
+<p align="left">
+  <img src="images/wb_con_2.png" alt="wb_con" width="25%">
 </p>
+
 > *Figure: Wishbone connection*
 
 SPI
@@ -81,14 +82,16 @@ SPI
 - A Master-Slave Architecture
 - Relatively slow - **require 64 clock cycles to access 1 word** 
 
-<p align="center">
-  <img src="images/spi_con.png" alt="spi_con" width="80%">
+<p align="left">
+  <img src="images/spi_con.png" alt="spi_con" width="40%">
 </p>
+
 > *Figure: SPI connection*
 
-<p align="center">
+<p align="left">
   <img src="images/spi_read_2.png" alt="spi_read" width="80%">
 </p>
+
 > *Figure: SPI Read (1 word)*
 
 ### Why integrate SPI with SERV?
@@ -103,8 +106,8 @@ SPI
 
 ### Full architecture
 
-<p align="center">
-  <img src="images/arch.png" alt="arch" width="100%">
+<p align="left">
+  <img src="images/arch.png" alt="arch" width="80%">
 </p>
 
 Hardware components:
@@ -122,16 +125,16 @@ For this project, we removed the I+D RAM in Servant and added a Wishbone-to-SPI 
 
 In this video we are demonstrating an SPI communication where the master reads the value in stored in the status register of the SPI FRAM. This takes 16 clock cycles to complete; 8 to send the relavant opcode to the SPI FRAM, and remaining 8 for SPI FRAM to send back the values stored in the status register.
 
-<p align="center">
-  <img src="images/read_status.png" alt="read_status" width="100%">
+<p align="left">
+  <img src="images/status_read.png" alt="read_status" width="80%">
 </p>
 
 During this demonstration we have slowed down the SPI transfer to a speed at which each bit transfer can be tracked. Upon a button press, the **spi_cs** goes down and the **spi_sck** start oscillating to give the reference clock. The data relevant for each bit is given at the negative edge of the clock, so that it can be sampled at the positive edge of the clock. The three instances where the **spi_mosi** and **spi_miso** is high is highlighted in the given waveform. During the video, you can count each bit according the LED blinks of the **spi_sck** and see whether the **spi_mosi** and **spi_miso** LEDs lights up at the relevant clock cycles. At the end of the communication, **done** and **correct** LEDs lights up indicating that it had finished reading and that it got the expected value.
 
 
-<p align="center">
+<p align="left">
   <a href="https://drive.google.com/file/d/1KDIRkERrDE8EYaxHws5yh2GlXSTsdqAu/view?usp=share_link">
-    <img src="images/read_status.png" alt="read_status_video" width="80%">
+    <img src="images/status_read_video.png" alt="read_status_video" width="40%">
   </a>
 </p>
 
@@ -139,15 +142,15 @@ During this demonstration we have slowed down the SPI transfer to a speed at whi
 
 In this video we are demonstrating an SPI communication where the master reads one full word (32 bits) from the SPI RAM. This takes 64 cycles in total; first 8 to send the relevant opcode to the SPI FRAM, next 24 to send the 18-bit address to the SPI FRAM, and the final 32 for the SPI FRAM to send back the data of the relevant word.
 
-<p align="center">
-  <img src="images/full_read.png" alt="full_read" width="100%">
+<p align="left">
+  <img src="images/full_read.png" alt="full_read" width="80%">
 </p>
 
 During this demonstration we have made the SPI transfer a bit more faster to see the entire 64 cycles within a shorter period. But this too is very slow when compared to the transfer speed used in our actual implementation (can transfer in speeds in the MHz scale).
 
-<p align="center">
+<p align="left">
   <a href="https://drive.google.com/file/d/1Vq7eqjoP34EnMNm1Lf9qcPabsoCWh0Qd/view?usp=share_link">
-    <img src="images/full_read.png" alt="full_read_video" width="80%">
+    <img src="images/full_read_video.png" alt="full_read_video" width="40%">
   </a>
 </p>
 
@@ -157,7 +160,7 @@ During this demonstration we have made the SPI transfer a bit more faster to see
 
 Here we are demonstrating a simple RISC-V assembly code that is used to blink an LED. In line 1, we are loading the address of the GPIO pin relavant to the LED into the register **x10** of the register file. The addresses of GPIO pins are outside the addresses available within the SPI FRAM (18 bit address = 256KB of memory). In lines 2 and 3 initial values are set for **x6** (maximum count) and **x5** (the next value for the LED) registers. Here **x0** is a special regsiter where the value is always 0. Next, we have two nested loops as **loop1** and **loop2**. **loop2** is used to increment the count at **x7** and when it reaches the maximum count, it exists to **loop1** where the LED is set using a SW (Store Word) instruction, the next value of the LED is set at **x5**, and the count in **x7** is reset to 0, before entering the **loop2** again.
 
-<p align="center">
+<p align="left">
   <a href="https://drive.google.com/file/d/1UUgeBskDR9mVubzMIdaTFAkc0gNOsYxZ/view?usp=share_link">
     <img src="images/LED_blink.png" alt="full_read_video" width="80%">
   </a>
@@ -170,8 +173,8 @@ Since RISC-V is an open-source ISA, you can find a lot of tools like this to vis
 #### The Dining Philosophers Problem
 The Dining Philosophers Problem is a classic example in computer science that illustrates issues related to synchronization, concurrency, and resource sharing. The main objective of this is to avoid deadlock.
 
-<p align="center">
-  <img src="images/at_the_table.png" alt="at_the_table" width="40%">
+<p align="left">
+  <img src="images/at_the_table.png" alt="at_the_table" width="30%">
 
 - There are five philosophers sitting around a circular table.
 - Each philosopher alternates between thinking and eating.
@@ -181,7 +184,7 @@ The Dining Philosophers Problem is a classic example in computer science that il
 
 In this video, we are demonstrating a program to tackling this Dining Philosophers Problem running on Zephyr OS booted onto SERV. Here the instructions have already been uploaded to the SPI FRAM using a Nano 33 BLE and we start by uploading the bitstream to the FPGA and opening the NIOS-II terminal to watch what SERV prints on it. At the start, it prints that the Zephyr OS is successfully booted and then gives a description of the program is is going to run for the Dining Philosophers Problem. Howeveer, we miss most of the description since NIOS-II has buffer for the JTAG which gets filled up quickly if there is not terminal for it to dump every data it gets. So, we miss some data that is sent to it during the time it takes for us to open the NIOS-II terminal after uploading the bitstream to the FPGA. Once the program starts, it prints the status of each Philosopher one-by-one. The statuses include **Eating**, **Thinking**, **Starving**, **Holding one fork** and **Dropped one fork**. When the status of each philosopher change, it is updated on the terminal by SERV.
 
-<p align="center">
+<p align="left">
   <a href="https://drive.google.com/file/d/1jfpaKQ-QNw_TkuU8nPNkDuweIA12KOAj/view?usp=share_link">
     <img src="images/Phil_FPGA.png" alt="full_read_video" width="80%">
   </a>
@@ -189,7 +192,7 @@ In this video, we are demonstrating a program to tackling this Dining Philosophe
 
 As mentioned above, this program is running on Zephyr OS booted onto SERV. However, currently we are using the Nano 33 BLE to upload the instructions into the SPI FRAM everytime we want to run it. SERV doesn't have a bootloader to boot a fresh copy of the instructions every time is restarts. In this video, we are uploading the bitstream again while the program is running on SERV. This will force the SERV to restart but the memory will stay at the same state at which it was at the last instruction it was executing. Once SERV is restarted, the program will run from the beginning and will work fine until it prints the status of all the Philosophers once. Then the program gets stuck and then it crashes. However, since Zephyr OS is still running, it will detect that the program crashed and will start printing error messages indicating that. This proves that Zephyr OS is indeed booted up on SERV and is not running a baremetal application for the Dining Philosophers Problem.
 
-<p align="center">
+<p align="left">
   <a href="https://drive.google.com/file/d/1hI5hFdwxnWLBAq0oJeDXNCwUbL61QmHP/view?usp=share_link">
     <img src="images/fatal_error.png" alt="full_read_video" width="80%">
   </a>
