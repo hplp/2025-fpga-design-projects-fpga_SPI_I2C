@@ -143,4 +143,25 @@ During this demonstration we have made the SPI transfer a bit more faster to see
 
 Here we are 
 
+<p align="center">
+  <a href="https://drive.google.com/file/d/1mmJ6Apd2WxKlU3S4erhoMQfNa2U6Be3C/view?usp=share_link">
+    <img src="images/LED_blink.png" alt="full_read_video" width="80%">
+  </a>
+</p>
 
+
+###### Phil_FPGA
+
+<p align="center">
+  <a href="https://drive.google.com/file/d/1jfpaKQ-QNw_TkuU8nPNkDuweIA12KOAj/view?usp=share_link">
+    <img src="images/Phil_FPGA.png" alt="full_read_video" width="80%">
+  </a>
+</p>
+
+###### fatal error
+
+<p align="center">
+  <a href="https://drive.google.com/file/d/1hI5hFdwxnWLBAq0oJeDXNCwUbL61QmHP/view?usp=share_link">
+    <img src="images/fatal_error.png" alt="full_read_video" width="80%">
+  </a>
+</p>
