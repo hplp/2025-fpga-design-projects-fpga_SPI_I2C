@@ -114,9 +114,10 @@ In this video we are demonstrating an SPI communication where the master reads t
 
 During this demonstration we have slowed down the SPI transfer to a speed at which each bit transfer can be tracked. Upon a button press, the **spi_cs** goes down and the **spi_sck** start oscillating to give the reference clock. The data relevant for each bit is given at the negative edge of the clock, so that it can be sampled at the positive edge of the clock. The three instances where the **spi_mosi** and **spi_miso** is high is highlighted in the given waveform. During the video, you can count each bit according the LED blinks of the **spi_sck** and see whether the **spi_mosi** and **spi_miso** LEDs lights up at the relevant clock cycles. At the end of the communication, **done** and **correct** LEDs lights up indicating that it had finished reading and that it got the expected value.
 
+
 <p align="center">
   <a href="https://drive.google.com/file/d/1KDIRkERrDE8EYaxHws5yh2GlXSTsdqAu/view?usp=share_link">
-    <img src="images/read_status_video.png" alt="read_status_video" width="80%">
+    <img src="images/read_status.png" alt="read_status_video" width="80%">
   </a>
 </p>
 
@@ -132,7 +133,7 @@ During this demonstration we have made the SPI transfer a bit more faster to see
 
 <p align="center">
   <a href="https://drive.google.com/file/d/1Vq7eqjoP34EnMNm1Lf9qcPabsoCWh0Qd/view?usp=share_link">
-    <img src="images/full_read_video.png" alt="full_read_video" width="80%">
+    <img src="images/full_read.png" alt="full_read_video" width="80%">
   </a>
 </p>
 
