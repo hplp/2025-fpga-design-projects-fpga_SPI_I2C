@@ -3,7 +3,7 @@
 ## 1. Project Outline
 
 ### Team Name:
-FPGA Project Group 8
+FPGA_SPI_SERV
 
 ### Final Presentation
 [Slides](https://myuva-my.sharepoint.com/:p:/g/personal/bp2sq_virginia_edu/EbR7KFxK4rZKp4n9x-FtiA0BusmC7vetWjMRAcpkG8rAVw?e=tEiBrJ)
